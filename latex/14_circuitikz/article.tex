@@ -1,0 +1,52 @@
+% https://www.latex-tutorial.com/tutorials/circuitikz/
+
+\documentclass{article}
+
+\usepackage{tikz}
+\usepackage{circuitikz}
+
+\begin{document}
+
+\begin{figure}[h!]
+  \begin{center}
+    \begin{circuitikz}
+      \draw (0,0)
+      to[V,v=$U_q$] (0,2) % The voltage source
+      to[short] (2,2)
+      to[R=$R_1$] (2,0) % The resistor
+      to[short] (0,0);
+    \end{circuitikz}
+    \caption{My first circuit.}
+  \end{center}
+\end{figure}
+
+\begin{circuitikz}
+  \draw (0,0)
+  to[V,v=$U_q$] (0,2) % The voltage source
+  to[short] (2,2)
+  to[R=$R_1$] (2,0) % The resistor
+  to[short] (0,0);
+  % add a new draw command to add more elements to the circuit
+  \draw (2,2)
+  to[short] (4,2)
+  to[L=$L_1$] (4,0)
+  to[short] (2,0);
+\end{circuitikz}
+
+\begin{circuitikz}
+  \draw (0,0)
+  to[V,v=$U_q$] (0,2) % The voltage source
+  to[short] (2,2)
+  to[R=$R_1$] (2,0) % The resistor
+  to[short] (0,0);
+  \draw (2,2)
+  to[short] (4,2)
+  to[L=$L_1$] (4,0)
+  to[short] (2,0);
+  \draw (4,2)
+  to[short] (6,2)
+  to[C=$C_1$] (6,0)
+  to[short] (4,0);
+\end{circuitikz}
+
+\end{document}

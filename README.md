@@ -17,6 +17,10 @@
 
 ## LaTeX
 
+1. 教程 https://www.latex-tutorial.com/tutorials/
+2. Ref http://www.math.harvard.edu/texman/
+3. 各种 package 的文档 https://ctan.org/pkg
+
 ### LyX
 
 ### tikzit

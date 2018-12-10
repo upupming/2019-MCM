@@ -1,0 +1,73 @@
+% https://www.latex-tutorial.com/tutorials/lists/
+
+\documentclass{article}
+
+% Change numbering for ordered lists
+\usepackage{enumitem}
+
+\begin{document}
+
+% Unordered list
+\begin{itemize}
+	\item One
+	\item Two
+	\item Three
+\end{itemize}
+
+% Ordered list
+\begin{enumerate}
+	\item One
+	\item Two
+	\item Three
+\end{enumerate}
+
+% Nested list
+\begin{enumerate}
+	\item One
+    \begin{enumerate}
+    	\item Two
+        \item Three
+        \item Four
+    \end{enumerate}
+    \item Five
+    \item Six
+\end{enumerate}
+
+% Changing the numbering / bullets
+\begin{itemize}
+	\item[--] Dash
+  \item[$-$] Dash
+  \item[$\ast$] Asterisk
+\end{itemize}
+
+% Use the enumitem package below
+
+%Roman numbers
+\begin{enumerate}[label=(\roman*)]
+\item Li Yiming
+\item Test
+\item Haha
+\end{enumerate}
+
+% Arabic numbers
+\begin{enumerate}[label=\arabic*)]
+\item Li Yiming
+\item Test
+\item Haha
+\item \end{enumerate}
+
+% Alphabetical
+\begin{enumerate}[label=\alph*)]
+\item Li Yiming
+\item Test
+\item Haha
+\end{enumerate}
+
+% Can be used for unordered list too
+\begin{itemize}[label=$\ast$]
+	\item One
+  \item Two
+  \item Three
+\end{itemize}
+
+\end{document}

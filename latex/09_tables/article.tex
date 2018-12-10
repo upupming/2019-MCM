@@ -1,0 +1,235 @@
+% https://www.latex-tutorial.com/tutorials/tables/
+
+\documentclass{article}
+
+
+% Align the numbers at the decimal point using the siunitx package
+\usepackage{siunitx}
+\sisetup {
+  % Rounds numbers
+  round-mode      = places,
+  % to 2 places
+  round-precision = 2,
+}
+
+% To make a row span several cells
+\usepackage{multirow}
+
+% booktabs, alternative for \hline
+\usepackage{booktabs}
+
+% To display tables on several pages
+\usepackage{longtable} 
+
+% To display tables in landscape
+\usepackage{rotating}
+
+\begin{document}
+  
+\begin{table}[h!]
+  \begin{center}
+    \caption{Your first table.}
+    \label{tab:table1}
+    % Alignments: 1st column left, 2nd middle and 3rd right, with vertical lines in between
+    \begin{tabular}{l|c|r}
+      \textbf{Value 1} & \textbf{Value 2} & \textbf{Value 3} \\
+      $\alpha$ & $\beta$ & $\gamma$ \\
+      \hline % horizontal line
+      1 & 1110.1 & a\\
+      2 & 10.1   & b \\
+      3 & 23.113231 & c\\
+    \end{tabular}
+  \end{center}
+\end{table}
+
+% Now we align the numbers at the decimal point using the siunitx package
+
+\begin{table}[h!]
+  \begin{center}
+    \caption{S aligned-number table table.}
+    \label{tab:table2}
+    % Alignments: 1st column left, 2nd align numbers automatically and 3rd right, with vertical lines in between
+    \begin{tabular}{l|S|r}
+      \textbf{Value 1} & \textbf{Value 2} & \textbf{Value 3} \\
+      $\alpha$ & $\beta$ & $\gamma$ \\
+      \hline % horizontal line
+      1 & 1110.1 & a\\
+      2 & 10.1   & b \\
+      3 & 23.113231 & c\\
+    \end{tabular}
+  \end{center}
+\end{table}
+
+% & is column separator
+% // is row separator
+
+
+% Now add one more row
+\begin{table}[h!]
+  \begin{center}
+    \caption{Add one more row.}
+    \label{tab:table3}
+    % Alignments: 1st column left, 2nd align numbers automatically and 3rd right, with vertical lines in between
+    \begin{tabular}{l|S|r}
+      \textbf{Value 1} & \textbf{Value 2} & \textbf{Value 3} \\
+      $\alpha$ & $\beta$ & $\gamma$ \\
+      \hline % horizontal line
+      1 & 1110.1 & a\\
+      2 & 10.1   & b \\
+      3 & 23.113231 & c\\
+      4 & 25.113231 & d\\ % <--
+    \end{tabular}
+  \end{center}
+\end{table}
+
+% Or add one more column
+\begin{table}[h!]
+  \begin{center}
+    \caption{Add one more column.}
+    \label{tab:table4}
+    % Alignments: 1st column left, 2nd align numbers automatically and 3rd right, with vertical lines in between
+    \begin{tabular}{l|S|r|l} % <--
+      \textbf{Value 1} & \textbf{Value 2} & \textbf{Value 3} & \textbf{Value 4}\\ % <--
+      $\alpha$ & $\beta$ & $\gamma$ & $\delta$ \\ % <--
+      \hline % horizontal line
+      1 & 1110.1 & a & e\\ % <--
+      2 & 10.1 & b & f\\ % <--
+      3 & 23.113231 & c & g\\ % <--
+    \end{tabular}
+  \end{center}
+\end{table}
+
+% Use multirow
+% \multirow{NUMBER_OF_ROWS}{WIDTH}{CONTENT}
+\begin{table}[h!]
+  \begin{center}
+    \caption{Multirow table.}
+    \label{tab:table5}
+    \begin{tabular}{l|S|r}
+      \textbf{Value 1} & \textbf{Value 2} & \textbf{Value 3}\\
+      $\alpha$ & $\beta$ & $\gamma$ \\
+      \hline
+      % Combining 2 rows with arbitrary with (*) and content 12
+      \multirow{2}{*}{12} & 1110.1 & a\\ 
+      % Content of first column omitted.
+      & 10.1 & b\\ 
+      \hline
+      3 & 23.113231 & c\\
+      4 & 25.113231 & d\\
+    \end{tabular}
+  \end{center}
+\end{table}
+
+% Use multicolumn
+% \multicolumn{NUMBER_OF_ROWS}{ALIGNMENT}{CONTENT}
+\begin{table}[h!]
+  \begin{center}
+    \caption{Multicolumn table.}
+    \label{tab:table6}
+    \begin{tabular}{l|S|r}
+      \textbf{Value 1} & \textbf{Value 2} & \textbf{Value 3}\\
+      $\alpha$ & $\beta$ & $\gamma$ \\
+      \hline
+      % Combining two cells with alignment c| and content 12.
+      \multicolumn{2}{c|}{12} & a\\
+      \hline
+      2 & 10.1 & b\\
+      3 & 23.113231 & c\\
+      4 & 25.113231 & d\\
+    \end{tabular}
+  \end{center}
+\end{table}
+
+% Now we combine multirow & multicolumn
+\begin{table}[h!]
+  \begin{center}
+    \caption{Multirow and -column table.}
+    \label{tab:table7}
+    \begin{tabular}{l|S|r}
+      \textbf{Value 1} & \textbf{Value 2} & \textbf{Value 3}\\
+      $\alpha$ & $\beta$ & $\gamma$ \\
+      \hline
+      % Multicolumn spanning 2 columns, content multirow spanning two rows
+      \multicolumn{2}{c|}{\multirow{2}{*}{1234}} & a\\
+      % Multicolumn spanning 2 columns with empty content as placeholder
+      \multicolumn{2}{c|}{} & b\\
+      \hline
+      3 & 23.113231 & c\\
+      4 & 25.113231 & d\\
+    \end{tabular}
+  \end{center}
+\end{table}
+
+% booktabs, alternative for \hline
+% We can now replace the hlines in our example table with toprule, midrule and bottomrule provided by the booktabs package:
+\begin{table}[h!]
+  \begin{center}
+    \caption{Table using booktabs.}
+    \label{tab:table8}
+    \begin{tabular}{l|S|r}
+      \toprule % <-- Toprule here
+      \textbf{Value 1} & \textbf{Value 2} & \textbf{Value 3}\\
+      $\alpha$ & $\beta$ & $\gamma$ \\
+      \midrule % <-- Midrule here
+      1 & 1110.1 & a\\
+      2 & 10.1 & b\\
+      3 & 23.113231 & c\\
+      \bottomrule % <-- Bottomrule here
+    \end{tabular}
+  \end{center}
+\end{table}
+
+
+% Multipage tables(too many rows)
+% The package longtable: make tables span multiple pages.
+
+% \begin{longtable}[POSITION_ON_PAGE]{ALIGNMENT} 
+% Replaces \begin{table}, alignment must be specified here (no more tabular)
+\begin{longtable}[c]{l|S|r} 
+  %%%%%%%%%%%%%%%%%%%%%
+  \caption{Multipage table.}
+  \label{tab:table9}\\
+  \toprule
+  \textbf{Value 1} & \textbf{Value 2} & \textbf{Value 3}\\
+  $\alpha$ & $\beta$ & $\gamma$ \\
+  \midrule
+  % This denotes the end of the header, which will be shown on the first page only
+  \endfirsthead
+  %%%%%%%%%%%%%%%%%%%%%
+  \toprule
+  \textbf{Value 1} & \textbf{Value 2} & \textbf{Value 3}\\
+  $\alpha$ & $\beta$ & $\gamma$ \\
+  \midrule
+  %%%%%%%%%%%%%%%%%%%%%
+  % Everything between \endfirsthead and \endhead will be shown as a header on every page
+  \endhead
+  1 & 1110.1 & a\\
+  2 & 10.1 & b\\
+  % ...
+  % ... Many rows in between
+  % ...
+  3 & 23.113231 & c\\
+  \bottomrule
+\end{longtable}
+
+
+% Landscape tables(too many columns)
+% Just replace the table environment with the sidewaystable environment
+\begin{sidewaystable}[h!]
+  \begin{center}
+  \caption{Landscape table.}
+  \label{tab:table10}
+  \begin{tabular}{l|S|r}
+  	\toprule
+  	\textbf{Value 1} & \textbf{Value 2} & \textbf{Value 3}\\
+  	$\alpha$ & $\beta$ & $\gamma$ \\
+    \midrule
+    1 & 1110.1 & a\\
+    2 & 10.1 & b\\
+    3 & 23.113231 & c\\
+    \bottomrule
+  \end{tabular}
+  \end{center}
+\end{sidewaystable}
+
+\end{document}

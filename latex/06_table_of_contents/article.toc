@@ -1,0 +1,7 @@
+\contentsline {section}{\numberline {1}Section}{2}
+\contentsline {subsection}{\numberline {1.1}Subsection}{2}
+\global \c@tocdepth 1\relax 
+\contentsline {section}{\numberline {2}Another section}{2}
+\contentsline {subsection}{\numberline {2.1}Subsection}{2}
+\contentsline {subsubsection}{\numberline {2.1.1}Subsubsection}{2}
+\global \c@tocdepth 3\relax 

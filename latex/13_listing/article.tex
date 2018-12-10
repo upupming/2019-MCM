@@ -1,0 +1,34 @@
+\documentclass{article}
+
+\usepackage{listings}
+\usepackage{color}
+
+% Set up the language of the package headings to german
+% This is not necessary if you're planning to use it in English.
+\renewcommand\lstlistingname{Quelltext} % Change language of section name
+
+\lstset{ % General setup for the package
+	language=Perl,
+	basicstyle=\small\sffamily,
+	numbers=left,
+ 	numberstyle=\tiny,
+	frame=tb,
+	tabsize=4,
+	columns=fixed,
+	showstringspaces=false,
+	showtabs=false,
+	keepspaces,
+	commentstyle=\color{red},
+	keywordstyle=\color{blue}
+}
+
+\begin{document}
+\begin{lstlisting}
+#!/usr/bin/perl
+print S(@ARGV);sub S{$r=(@_[0]%4==0&&@_[0]%100!=0)||@_[0]%400=0;}
+\end{lstlisting}
+
+% Or load from file
+\lstinputlisting{script.pl}
+
+\end{document}

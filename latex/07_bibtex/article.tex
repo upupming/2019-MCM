@@ -1,0 +1,28 @@
+% https://www.latex-tutorial.com/tutorials/bibtex/
+
+% ieeetr 
+% apalike 
+
+\documentclass{article}
+
+\usepackage{graphicx}
+\usepackage{subcaption}
+\usepackage{setspace}
+% The backend=bibtex part makes sure to use BibTeX instead of Biber as our backend, since Biber fails to work in some editors like TeXworks. It took me a while to figure out how to generate footnotes automatically, because the sources I found on the internet, didn't mention this at all.
+\usepackage[backend=bibtex,style=verbose-trad2]{biblatex}
+\bibliography{./bib/ref.bib}
+% \setcounter{tocdepth}{1}
+
+%...
+\begin{document}
+
+% Not use in bibtex
+% \bibliographystyle{apalike}
+
+Random citation \autocite{DUMMY:1} embedded in text.
+
+\newpage
+
+\printbibliography
+
+\end{document}

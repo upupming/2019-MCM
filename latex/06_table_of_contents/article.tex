@@ -1,0 +1,49 @@
+% https://www.latex-tutorial.com/tutorials/table-of-contents/
+
+\documentclass{article}
+
+\setcounter{tocdepth}{1} % Show sections
+%\setcounter{tocdepth}{2} % + subsections
+%\setcounter{tocdepth}{3} % + subsubsections
+%\setcounter{tocdepth}{4} % + paragraphs
+%\setcounter{tocdepth}{5} % + subparagraphs
+
+\begin{document}
+
+% Here
+\doublespacing
+\tableofcontents
+\singleplacing
+\newpage
+
+\section{Section}
+
+Dummy text
+
+\subsection{Subsection}
+
+Dummy text
+
+\addtocontents{toc}{\setcounter{tocdepth}{1}} % Set depth to 1
+\section{Another section}
+\subsection{Subsection}
+\subsubsection{Subsubsection}
+%...
+\addtocontents{toc}{\setcounter{tocdepth}{3}} % Reset to default (3)
+
+\begin{figure}
+  \caption{Dummy figure}
+\end{figure}
+
+\begin{table}
+  \caption{Dummy table}
+\end{table}
+...
+\begin{appendix}
+  % Here 
+  \listoffigures
+  \listoftables
+\end{appendix}
+
+\end{document}
+
