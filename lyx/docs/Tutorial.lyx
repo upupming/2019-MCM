@@ -1,0 +1,5109 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass book
+\use_default_options false
+\begin_modules
+logicalmkup
+\end_modules
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "palatino" "default"
+\font_sans "helvet" "default"
+\font_typewriter "courier" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures false
+\graphics default
+\default_output_format pdf2
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize 12
+\spacing single
+\use_hyperref true
+\pdf_title "The LyX Tutorial"
+\pdf_author "LyX Team"
+\pdf_subject "LyX-documentation Tutorial"
+\pdf_keywords "LyX, documentation"
+\pdf_bookmarks true
+\pdf_bookmarksnumbered true
+\pdf_bookmarksopen true
+\pdf_bookmarksopenlevel 1
+\pdf_breaklinks true
+\pdf_pdfborder false
+\pdf_colorlinks true
+\pdf_backref false
+\pdf_pdfusetitle false
+\pdf_quoted_options "linkcolor=black, citecolor=black, urlcolor=blue, filecolor=blue,pdfpagelayout=OneColumn, pdfnewwindow=true, pdfstartview=XYZ, plainpages=false"
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 0
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 2
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 2
+\paperpagestyle headings
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+The \SpecialChar LyX
+ Tutorial
+\end_layout
+
+\begin_layout Author
+by the \SpecialChar LyX
+ Team
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+\noindent
+If you have comments on or corrections to this documentation, please send
+ them to the \SpecialChar LyX
+ Documentation mailing list: 
+\begin_inset CommandInset href
+LatexCommand href
+target "lyx-docs@lists.lyx.org"
+type "mailto:"
+literal "false"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset toc
+LatexCommand tableofcontents
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter
+Introduction
+\end_layout
+
+\begin_layout Section
+Welcome to \SpecialChar LyX
+!
+\end_layout
+
+\begin_layout Standard
+This manual is designed for all of you who have never heard of \SpecialChar LaTeX
+, or do not
+ know it very well.
+ Now, do not panic – you will not need to learn \SpecialChar LaTeX
+ to use \SpecialChar LyX
+.
+ That is, after all, the whole point of \SpecialChar LyX
+: to provide an almost-WYSIWYG interface
+ to \SpecialChar LaTeX
+.
+ There are some things you will need to learn, however, in order to use
+ \SpecialChar LyX
+ effectively.
+\end_layout
+
+\begin_layout Standard
+Some of you probably found your way to this document because you tried to
+ put two spaces after a 
+\begin_inset Quotes eld
+\end_inset
+
+.
+\begin_inset Quotes erd
+\end_inset
+
+ or tried to put three blank lines between paragraphs.
+ You found out you could not and, in fact, you will find out that most of
+ the little tricks you are accustomed to use in word processors will not
+ work in \SpecialChar LyX
+.
+ That is because most word processors you have used before allow you manually
+ to enter all spacings, font changes, and so on.
+ So you end up not only writing a document but typesetting it, too.
+ \SpecialChar LyX
+ does the typesetting for you, in a consistent fashion, letting you focus
+ on the important things, like the content of your writing.
+\end_layout
+
+\begin_layout Standard
+So read on to learn more about \SpecialChar LyX
+.
+ Reading this tutorial is definitely worth the time.
+\end_layout
+
+\begin_layout Section
+What the Tutorial 
+\emph on
+is
+\emph default
+ and what it 
+\emph on
+is not
+\end_layout
+
+\begin_layout Standard
+Before we get started with this section, you need to know that this 
+\emph on
+Tutorial
+\emph default
+ uses the notation outlined in the 
+\emph on
+Introduction
+\emph default
+ manual.
+ If you came to this manual first, please read the 
+\emph on
+Introduction
+\emph default
+ before you continue with the 
+\emph on
+Tutorial
+\emph default
+.
+\end_layout
+
+\begin_layout Standard
+Now that you know which fonts mean what in the documentation, we want to
+ talk a bit about what this 
+\emph on
+Tutorial
+\emph default
+ is for.
+\end_layout
+
+\begin_layout Subsection
+Getting the most out of the Tutorial
+\end_layout
+
+\begin_layout Standard
+This tutorial consists of examples and exercises.
+ To get the most out of this document, you should read through it, typing
+ all the little things we are telling you to type and trying out all of
+ the exercises to see if you get them right.
+ For convenience, you might want to print out the PDF version of this document.
+\end_layout
+
+\begin_layout Standard
+If you are familiar with \SpecialChar LaTeX
+, you will probably be able to read the 
+\emph on
+Tutorial
+\emph default
+ somewhat faster, since many \SpecialChar LyX
+ ideas are just \SpecialChar LaTeX
+ ideas in disguise.
+ However, \SpecialChar LyX
+ has features you will want to learn about.
+ Even if you do not feel like reading the rest of the 
+\emph on
+Tutorial
+\emph default
+, you should definitely check out Section
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:latexusers"
+
+\end_inset
+
+, which is specifically written for experienced \SpecialChar LaTeX
+ users.
+\end_layout
+
+\begin_layout Subsection
+What you 
+\emph on
+will not
+\emph default
+ find
+\end_layout
+
+\begin_layout Itemize
+Detailed explanations of all of \SpecialChar LyX
+'s features.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Look in the 
+\emph on
+User's Guide
+\emph default
+ when you need this.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Detailed explanations of \SpecialChar LaTeX
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Unnecessary.
+ If you want to learn some of the neat tricks you can do with \SpecialChar LaTeX
+ in \SpecialChar LyX
+, you
+ can have a look at the 
+\emph on
+Embedded
+\begin_inset space ~
+\end_inset
+
+Objects
+\emph default
+ manual.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+It is time to move on, time for your first document \SpecialChar ldots
+
+\end_layout
+
+\begin_layout Chapter
+Getting started with \SpecialChar LyX
+
+\end_layout
+
+\begin_layout Section
+Your first \SpecialChar LyX
+ document
+\end_layout
+
+\begin_layout Standard
+OK\SpecialChar endofsentence
+ You are ready to start writing.
+ Before you do, there are a few things we need to mention, which will hopefully
+ make the Tutorial more instructive and useful.
+ 
+\end_layout
+
+\begin_layout Standard
+Because there is information we cannot give you in the Tutorial, the 
+\emph on
+first
+\emph default
+ 
+\series medium
+thing that you need to do is find the
+\series default
+ other 
+\series medium
+help files.
+ This is very simple:
+\series default
+ Start up \SpecialChar LyX
+, select the 
+\emph on
+User's Guide
+\emph default
+ from the 
+\family sans
+Help
+\family default
+ menu.
+ You may want to load the 
+\emph on
+Tutorial
+\emph default
+ as well (if you are not reading it within \SpecialChar LyX
+ already).
+ This way, you can read them while you are writing your own file.
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+They can also serve as good examples of how to use the many features of
+ \SpecialChar LyX
+.
+\end_layout
+
+\end_inset
+
+ Note that once you have got more than one document open, you can use the
+ 
+\family sans
+View
+\family default
+ menu or the document tabs to switch between them.
+\end_layout
+
+\begin_layout Standard
+In this Tutorial, we are going to assume that you have a fully working version
+ of \SpecialChar LyX
+, as well as a \SpecialChar LaTeX
+-distribution and a PDF-viewer.
+ This should be the case on all major Linux- and BSD-distributions, as well
+ as on Windows, where this is setup by the \SpecialChar LyX
+ installers.
+\end_layout
+
+\begin_layout Standard
+Finally, we have written a file called 
+\family typewriter
+example_raw.lyx
+\family default
+ to let you practice your \SpecialChar LyX
+ skills.
+ Imagine that it was typed by someone who did not know about any of \SpecialChar LyX
+'s great
+ features.
+ As you learn new \SpecialChar LyX
+ functions, we will suggest that you fix those parts of
+ 
+\family typewriter
+example_raw.lyx
+\family default
+.
+ It also contains `subtle' hints about how to fix things.
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+The hints are located in yellow 
+\begin_inset Quotes eld
+\end_inset
+
+Notes
+\begin_inset Quotes erd
+\end_inset
+
+.
+ Access the text in a note by clicking on it.
+\end_layout
+
+\end_inset
+
+ If you want to cheat, or check what you have done, there is also a file
+ called
+\begin_inset Newline newline
+\end_inset
+
+
+\family typewriter
+example_lyxified.lyx
+\family default
+ which contains the same text written and typeset by a \SpecialChar LyX
+ master.
+\end_layout
+
+\begin_layout Standard
+The example files can be found in the 
+\family typewriter
+examples
+\family default
+ directory of \SpecialChar LyX
+'s installation folder.
+ Open the document 
+\family typewriter
+example_raw.lyx
+\family default
+ and use 
+\family sans
+File\SpecialChar menuseparator
+Save
+\begin_inset space ~
+\end_inset
+
+As
+\family default
+ to save a copy in your own directory for you to work on.
+ As you fix parts of the raw document, check to see how those changes affect
+ the output.
+\end_layout
+
+\begin_layout Standard
+By the way, the 
+\family typewriter
+examples
+\family default
+ directory contains lots of other examples files.
+ They will show you how to do various fancy things with \SpecialChar LyX
+.
+ After you have read the Tutorial, or when you are confused about how to
+ do something fancy in \SpecialChar LyX
+, take a look at these files.
+\end_layout
+
+\begin_layout Subsection
+Typing, Viewing, and Exporting
+\end_layout
+
+\begin_layout Itemize
+Open a new file with 
+\family sans
+File\SpecialChar menuseparator
+New
+\end_layout
+
+\begin_layout Itemize
+Type a sentence like: 
+\family typewriter
+This is my first \SpecialChar LyX
+ document!
+\end_layout
+
+\begin_layout Itemize
+Save your document with 
+\family sans
+File\SpecialChar menuseparator
+Save
+\begin_inset space ~
+\end_inset
+
+As\SpecialChar endofsentence
+
+\end_layout
+
+\begin_layout Itemize
+Create a PDF file, with 
+\family sans
+Document\SpecialChar menuseparator
+View
+\family default
+ or the toolbar button 
+\begin_inset Info
+type  "icon"
+arg   "buffer-view"
+\end_inset
+
+.
+ \SpecialChar LyX
+ will open a PDF-viewer program displaying your document as it will look
+ when printed.
+\end_layout
+
+\begin_layout Itemize
+Export the ready to print document with 
+\family sans
+File\SpecialChar menuseparator
+Export
+\family default
+ to a format you want
+\family sans
+.
+\end_layout
+
+\begin_layout Standard
+Congratulations! You have written your first \SpecialChar LyX
+ document.
+ All of the rest is just details.
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+A hint:
+\series default
+ You can save time by leaving the PDF viewer running in the background.
+ Under MacOS and Linux you can use 
+\family sans
+Document\SpecialChar menuseparator
+Update
+\family default
+ or the toolbar button 
+\begin_inset Info
+type  "icon"
+arg   "buffer-update"
+\end_inset
+
+ and just click on the PDF viewer window afterwards.
+ Under Windows still use 
+\family sans
+Document\SpecialChar menuseparator
+View
+\family default
+ or 
+\begin_inset Info
+type  "icon"
+arg   "buffer-view"
+\end_inset
+
+ respectively.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Another hint:
+\series default
+ In case you are using a high-resolution display, the LyX toolbar icons
+ are quite small.
+ To change their size, right-click into a toolbar.
+\end_layout
+
+\begin_layout Subsection
+Simple Operations
+\end_layout
+
+\begin_layout Standard
+\SpecialChar LyX
+ can of course do most of the things you are used to doing with a word processor.
+ It will word-wrap and indent paragraphs automatically.
+ Here is a quick description of how to do some simple actions.
+\end_layout
+
+\begin_layout Description
+Undo \SpecialChar LyX
+ has multiple levels of undo, which means you can undo everything you
+ have done since your current editing session started, by selecting 
+\family sans
+Edit\SpecialChar menuseparator
+Undo
+\family default
+ (toolbar button 
+\begin_inset Info
+type  "icon"
+arg   "undo"
+\end_inset
+
+) over and over again.
+ If you undo too much, just select 
+\family sans
+Edit\SpecialChar menuseparator
+Redo
+\family default
+ (toolbar button 
+\begin_inset Info
+type  "icon"
+arg   "redo"
+\end_inset
+
+) to get it back.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Currently, undo is limited to 100 steps.
+\end_layout
+
+\end_deeper
+\begin_layout Description
+Cut/Paste/Copy Use 
+\family sans
+Edit\SpecialChar menuseparator
+Cut
+\family default
+ (toolbar button 
+\begin_inset Info
+type  "icon"
+arg   "cut"
+\end_inset
+
+), 
+\family sans
+Edit\SpecialChar menuseparator
+Copy
+\family default
+ (toolbar button 
+\begin_inset Info
+type  "icon"
+arg   "copy"
+\end_inset
+
+), and 
+\family sans
+Edit\SpecialChar menuseparator
+Paste
+\family default
+ (toolbar button 
+\begin_inset Info
+type  "icon"
+arg   "paste"
+\end_inset
+
+) to cut, copy, and paste.
+ Or automatically paste selected text (including selections from other programs)
+ with the 
+\emph on
+middle mouse button
+\emph default
+.
+\end_layout
+
+\begin_layout Description
+Find/Replace Use 
+\family sans
+Edit\SpecialChar menuseparator
+Find
+\begin_inset space ~
+\end_inset
+
+&
+\begin_inset space ~
+\end_inset
+
+Replace
+\family default
+ (toolbar button 
+\begin_inset Info
+type  "icon"
+arg   "dialog-show findreplace"
+\end_inset
+
+) to search.
+ In the dialog, search with the 
+\family sans
+Find
+\begin_inset space ~
+\end_inset
+
+Next
+\family default
+ button, and use the 
+\family sans
+Replace
+\family default
+ button to replace a word you have found.
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+Close the window when you are done or leave it open if you find it more
+ convenient.
+ Most dialog boxes in \SpecialChar LyX
+ can operate like this.
+ Just be sure you have the right window in focus when you are trying to
+ type in the main \SpecialChar LyX
+ window or a \SpecialChar LyX
+ dialog.
+\end_layout
+
+\end_inset
+
+ If you like, you can specify whether to make the search case-sensitive,
+ or to search for only complete words; you can also search backwards through
+ the document.
+\end_layout
+
+\begin_layout Description
+Character
+\begin_inset space ~
+\end_inset
+
+Formatting You can 
+\emph on
+emphasize
+\emph default
+ text (toolbar button 
+\begin_inset Info
+type  "icon"
+arg   "font-emph"
+\end_inset
+
+, which will by default print characters in italics), set it in 
+\noun on
+Noun Style
+\noun default
+ (toolbar button 
+\begin_inset Info
+type  "icon"
+arg   "font-noun"
+\end_inset
+
+, usually small caps, used for people's names), or use your own formatting
+ by using the 
+\family sans
+Edit\SpecialChar menuseparator
+Text
+\begin_inset space ~
+\end_inset
+
+Style\SpecialChar menuseparator
+Customized
+\family default
+ dialog (toolbar button 
+\begin_inset Info
+type  "icon"
+arg   "dialog-show character"
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Description
+Toolbar Other buttons on the toolbar allow you to do some of the more popular
+ functions, such as 
+\family sans
+Insert
+\begin_inset space ~
+\end_inset
+
+math
+\family default
+, 
+\family sans
+Insert
+\begin_inset space ~
+\end_inset
+
+graphics
+\family default
+ and 
+\family sans
+Insert
+\begin_inset space ~
+\end_inset
+
+table
+\family default
+.
+\end_layout
+
+\begin_layout Standard
+Of course, you have not yet written enough to make most of these functions
+ useful.
+ As you write more, though, try undoing, pasting, etc.
+\end_layout
+
+\begin_layout Subsection
+WYSIWYM: Whitespace in \SpecialChar LyX
+
+\end_layout
+
+\begin_layout Standard
+One of the hardest things for new users to get used to is the way that \SpecialChar LyX
+
+ handles whitespace.
+ As many times as you hit 
+\family sans
+Return
+\family default
+, you will only get one blank line.
+ As many times as you hit 
+\family sans
+Space
+\family default
+, you will only get one space.
+ On a blank line, \SpecialChar LyX
+ will not let you type even one space.
+ The 
+\family sans
+Tab
+\family default
+ key will not move you forward one tab stop; in fact there 
+\emph on
+are
+\emph default
+ no tab stops! There is no ruler at the top of the page to let you set tabs
+ or margins, either.
+\end_layout
+
+\begin_layout Standard
+Many word processors are based on the WYSIWYG principle: 
+\begin_inset Quotes eld
+\end_inset
+
+What You See Is What You Get.
+\begin_inset Quotes erd
+\end_inset
+
+ \SpecialChar LyX
+, on the other hand, is based on the principle that 
+\begin_inset Quotes eld
+\end_inset
+
+What You See Is What You 
+\emph on
+Mean
+\emph default
+.
+\begin_inset Quotes erd
+\end_inset
+
+ You type what you mean and \SpecialChar LyX
+ will take care of typesetting it for you so
+ that the output looks nice.
+ A 
+\family sans
+Return
+\family default
+ grammatically separates paragraphs and a 
+\family sans
+Space
+\family default
+ grammatically separates words; so there is no reason to have several of
+ them in a row; a 
+\family sans
+Tab
+\family default
+ has no grammatical function at all – so \SpecialChar LyX
+ does not support it.
+ Using \SpecialChar LyX
+, you will spend more of your time worrying about the 
+\emph on
+content
+\emph default
+ of your document and less time worrying about the 
+\emph on
+format.
+
+\emph default
+ See the 
+\emph on
+Introduction
+\emph default
+ for more information on the WYSIWYM concept.
+\end_layout
+
+\begin_layout Standard
+\SpecialChar LyX
+ does have (many) ways to fine-tune the formatting of your document.
+ After all, \SpecialChar LyX
+ might not typeset 
+\emph on
+exactly
+\emph default
+ what you mean.
+ The 
+\emph on
+User's Guide
+\emph default
+ has information about all that.
+ It includes horizontal fills and vertical space — which are more powerful
+ and versatile than multiple spaces or blank lines — and ways to change
+ font sizes, character styles, and paragraph alignments by hand.
+ The idea, though, is that you can write your whole document, focusing on
+ content, and just worry about that fine-tuning at the end.
+ With standard word processors, you will be distracted by document formatting
+ throughout the writing process.
+\end_layout
+
+\begin_layout Section
+Environments
+\end_layout
+
+\begin_layout Standard
+Different parts of a document have different purposes; we call these parts
+ 
+\emph on
+environments
+\emph default
+.
+ Most of a document is made up of regular text.
+ Section titles (chapter, subsection, etc.) let the reader know that a new
+ topic or subtopic will be discussed.
+ Certain types of documents have special environments.
+ A journal article will have an abstract and a title.
+ A letter will have neither of these, but will probably have an environment
+ that gives the writer's address.
+\end_layout
+
+\begin_layout Standard
+Environments are a major part of the 
+\begin_inset Quotes eld
+\end_inset
+
+What You See Is What You Mean
+\begin_inset Quotes erd
+\end_inset
+
+ philosophy of \SpecialChar LyX
+.
+ A given environment may require a certain font style, font size, indenting,
+ line spacing, and more.
+ This problem is aggravated, because the exact formatting for a given environmen
+t may change: one journal may use boldface, 18 point, centered type for
+ section titles while another uses italicized, 15 point, left justified
+ type; different languages may have different standards for indenting; and
+ bibliography formats can vary widely.
+ \SpecialChar LyX
+ lets you avoid learning all the different formatting styles.
+\end_layout
+
+\begin_layout Standard
+The 
+\family sans
+Environment
+\family default
+ choice box is located on the left end of the toolbar and looks like this:
+ 
+\begin_inset Graphics
+	filename C:/Program Files (x86)/LyX 2.3/Resources/doc/clipart/ToolbarEnvBox.png
+	scale 75
+	clip
+
+\end_inset
+
+.
+ It indicates in which environment you are currently writing.
+ While you were writing your first document, it said 
+\begin_inset Quotes eld
+\end_inset
+
+Standard,
+\begin_inset Quotes erd
+\end_inset
+
+ which is the default environment for text.
+ Now you will put a number of environments in your new document so that
+ you can see how they work.
+\end_layout
+
+\begin_layout Subsection
+Sections and Subsections
+\end_layout
+
+\begin_layout Standard
+Type the word 
+\family typewriter
+Introduction
+\family default
+ on the first line of your new \SpecialChar LyX
+ file, and select 
+\family sans
+Section
+\family default
+ in the 
+\family sans
+Environment
+\family default
+ box.
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+You do not have to 
+\emph on
+select
+\emph default
+ the line.
+ If nothing is selected, \SpecialChar LyX
+ changes the paragraph you are currently in to
+ the selected environment.
+ Alternatively, you can change several paragraphs to a different environment
+ by selecting them before picking an environment.
+\end_layout
+
+\end_inset
+
+ Be sure to use 
+\family sans
+Section
+\family default
+ and 
+\emph on
+not
+\emph default
+ 
+\family sans
+Section*
+\family default
+, which will be covered below.
+ \SpecialChar LyX
+ numbers the section 
+\begin_inset Quotes eld
+\end_inset
+
+1
+\begin_inset Quotes erd
+\end_inset
+
+ and typesets the section heading (title) in a larger font.
+ Now hit 
+\family sans
+Return
+\family default
+\SpecialChar endofsentence
+ Note that the 
+\family sans
+Environment
+\family default
+ box changes from 
+\begin_inset Quotes eld
+\end_inset
+
+Section
+\begin_inset Quotes erd
+\end_inset
+
+ back to 
+\begin_inset Quotes eld
+\end_inset
+
+Standard
+\begin_inset Quotes erd
+\end_inset
+
+.
+ Section headings, like most environments, are assumed to end when you type
+ 
+\family sans
+Return
+\family default
+\SpecialChar endofsentence
+ Type the document introduction: 
+\end_layout
+
+\begin_layout LyX-Code
+This is an introduction to my first \SpecialChar LyX
+ document.
+\end_layout
+
+\begin_layout Standard
+Hit 
+\family sans
+Return
+\family default
+ again, and select 
+\family sans
+Section
+\family default
+ from the 
+\family sans
+Environment
+\family default
+ box again.
+ \SpecialChar LyX
+ writes a 
+\begin_inset Quotes eld
+\end_inset
+
+2
+\begin_inset Quotes erd
+\end_inset
+
+ and waits for you to type a title.
+ Type 
+\begin_inset Quotes eld
+\end_inset
+
+
+\family typewriter
+More
+\begin_inset space ~
+\end_inset
+
+Stuff
+\family default
+
+\begin_inset Quotes erd
+\end_inset
+
+, and you will see that \SpecialChar LyX
+ again sets it as a section title.
+\end_layout
+
+\begin_layout Standard
+It gets better.
+ Go to the end of Section
+\begin_inset space ~
+\end_inset
+
+1 again (after 
+\begin_inset Quotes eld
+\end_inset
+
+my first \SpecialChar LyX
+ document.
+\begin_inset Quotes erd
+\end_inset
+
+) and hit 
+\family sans
+Return
+\family default
+ again, and select 
+\family sans
+Section
+\family default
+ from the 
+\family sans
+Environment
+\family default
+ box again.
+ Again, \SpecialChar LyX
+ writes 
+\begin_inset Quotes eld
+\end_inset
+
+2
+\begin_inset Quotes erd
+\end_inset
+
+ and waits for you to type a title.
+ Type 
+\family typewriter
+About This Document
+\family default
+.
+ Section
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Quotes eld
+\end_inset
+
+More Stuff
+\begin_inset Quotes erd
+\end_inset
+
+, which was Section
+\begin_inset space ~
+\end_inset
+
+2, has been automatically renumbered to Section
+\begin_inset space ~
+\end_inset
+
+3! In true WYSIWYM fashion, you just need to identify the text that makes
+ up the section titles, and \SpecialChar LyX
+ takes care of numbering the sections and typesettin
+g them.
+\end_layout
+
+\begin_layout Standard
+Hit 
+\family sans
+Return
+\family default
+ to get back to the 
+\family sans
+Standard
+\family default
+ environment, and type the following five lines:
+\end_layout
+
+\begin_layout LyX-Code
+Sections and subsections are described below.
+\end_layout
+
+\begin_layout LyX-Code
+Section Description
+\end_layout
+
+\begin_layout LyX-Code
+Sections are bigger than subsections.
+\end_layout
+
+\begin_layout LyX-Code
+Subsection description
+\end_layout
+
+\begin_layout LyX-Code
+Subsections are smaller than sections.
+\end_layout
+
+\begin_layout Standard
+Click on the second line and select 
+\family sans
+Subsection
+\family default
+ from the 
+\family sans
+Environment
+\family default
+ box.
+ \SpecialChar LyX
+ numbers the subsection 
+\begin_inset Quotes eld
+\end_inset
+
+2.1
+\begin_inset Quotes erd
+\end_inset
+
+, and typesets it in a font which is bigger than regular text but smaller
+ than the section title.
+ Change the fourth line to the 
+\family sans
+Subsection
+\family default
+ environment as well.
+ As you probably expected, \SpecialChar LyX
+ automatically numbered the section 
+\begin_inset Quotes eld
+\end_inset
+
+2.2
+\begin_inset Quotes erd
+\end_inset
+
+.
+ If you put yet another section before Section
+\begin_inset space ~
+\end_inset
+
+2, Section
+\begin_inset space ~
+\end_inset
+
+2 will be renumbered as Section 3, and the subsections will be renumbered
+ to 
+\begin_inset Quotes eld
+\end_inset
+
+3.1
+\begin_inset Quotes erd
+\end_inset
+
+ and 
+\begin_inset Quotes eld
+\end_inset
+
+3.2
+\begin_inset Quotes erd
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Further levels of sectioning include 
+\family sans
+Subsubsection
+\family default
+, 
+\family sans
+Paragraph
+\family default
+, and 
+\family sans
+Subparagraph
+\family default
+.
+ We will let you play with these on your own.
+ You may notice that paragraph and subparagraph headings are not numbered
+ by default, and that subparagraphs are indented; see the 
+\emph on
+User's Guide
+\emph default
+ for an explanation and how to change this.
+ 
+\family sans
+Chapter
+\family default
+ headings are actually the highest level of sectioning, above 
+\family sans
+Section
+\family default
+s, but you are only allowed to use them in certain types (text classes)
+ of \SpecialChar LyX
+ documents (see Section
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:Document-Classes"
+
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Standard
+Finally, you may want to have sections or subsections that are not numbered.
+ There are environments for this as well.
+ If you change one of your section headings to the 
+\family sans
+Section*
+\family default
+ environment (you may have to scroll down in the 
+\family sans
+Environment
+\family default
+ box to find it), \SpecialChar LyX
+ will use the same font size for the heading as it uses
+ for a regular section, but it will not number that section.
+ There are corresponding 
+\begin_inset Quotes eld
+\end_inset
+
+starred
+\begin_inset Quotes erd
+\end_inset
+
+ heading environments for 
+\family sans
+Subsection
+\family default
+ and 
+\family sans
+Subsubsection
+\family default
+.
+ Try changing some of your sections or subsections to the starred environments,
+ and note how the other section numbers are updated.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+Exercise
+\series default
+: Fix the section and subsection headings in
+\begin_inset Newline newline
+\end_inset
+
+
+\family typewriter
+example_raw.lyx
+\family default
+.
+ 
+\end_layout
+
+\begin_layout Subsection
+Lists and sublists
+\end_layout
+
+\begin_layout Standard
+\SpecialChar LyX
+ has several different environments for typesetting lists.
+ The various list environments free you from hitting 
+\family sans
+Tab
+\family default
+ a million times when writing an outline, or from renumbering a whole list
+ when you want to add a point in the middle of the list.
+ Different types of documents logically require different list environments:
+\end_layout
+
+\begin_layout Itemize
+A slide presentation might use the 
+\family sans
+Itemize
+\family default
+ environment's bulleted lists to describe different points.
+\end_layout
+
+\begin_layout Itemize
+An outline would use the 
+\family sans
+Enumerate
+\family default
+ environment's numbered lists (and lettered sublists).
+\end_layout
+
+\begin_layout Itemize
+A document describing several software packages could use the 
+\family sans
+Description
+\family default
+ environment, where each item in the list begins with a bold-faced word.
+\end_layout
+
+\begin_layout Itemize
+The 
+\family sans
+List
+\family default
+ (also named 
+\family sans
+Labeling
+\family default
+) environment is a variation on the 
+\family sans
+Description
+\family default
+ environment.
+\end_layout
+
+\begin_layout Standard
+Let us write a list of reasons why \SpecialChar LyX
+ is better than other word processors.
+ Somewhere in your document, type:
+\end_layout
+
+\begin_layout Standard
+
+\family typewriter
+\SpecialChar LyX
+ is better than other word processors because:
+\end_layout
+
+\begin_layout Standard
+and hit 
+\family sans
+Return
+\family default
+.
+ Now select 
+\family sans
+Itemize
+\family default
+ from the 
+\family sans
+Environment
+\family default
+ box (
+\begin_inset Info
+type  "icon"
+arg   "layout Itemize"
+\end_inset
+
+).
+ \SpecialChar LyX
+ writes a 
+\begin_inset Quotes eld
+\end_inset
+
+bullet
+\begin_inset Quotes erd
+\end_inset
+
+ on the line.
+ Type in your reasons:
+\end_layout
+
+\begin_layout LyX-Code
+Typesetting is done for you.
+\end_layout
+
+\begin_layout LyX-Code
+Math is WYSIWYG
+\end_layout
+
+\begin_layout LyX-Code
+Lists are very easy to create!
+\end_layout
+
+\begin_layout Standard
+List environments, unlike headings, do not end when you type 
+\family sans
+Return
+\family default
+.
+ Instead, \SpecialChar LyX
+ assumes you are going on to the next item in the list.
+ The above will therefore result in a three-item list.
+ If you want more than one paragraph within one list 
+\emph on
+item
+\emph default
+, one way is to use the 
+\family sans
+Protected
+\begin_inset space ~
+\end_inset
+
+Break
+\family default
+, which you get by typing 
+\family sans
+Ctrl+Return
+\family default
+.
+ In order to get out of the list, you need to reselect the 
+\family sans
+Standard
+\family default
+ environment (or just use the key binding 
+\begin_inset Info
+type  "shortcut"
+arg   "layout Standard"
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Standard
+You now have a beautiful itemized list.
+ You might want to run \SpecialChar LaTeX
+ to see how the list looks when printed out.
+ But what if you wanted to number the reasons? Well, just select the whole
+ list
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+\SpecialChar LyX
+ will not let you select the first bullet (or the actual number in a numbered
+ section title) unless you also select the paragraph 
+\emph on
+before
+\emph default
+ it, which you probably do not want to do.
+ This is on purpose because the bullet or number depends on the document
+ settings or text position, respectively.
+\end_layout
+
+\end_inset
+
+ and choose 
+\family sans
+Enumerate
+\family default
+ from the 
+\family sans
+Environment
+\family default
+ box (
+\begin_inset Info
+type  "icon"
+arg   "layout Enumerate"
+\end_inset
+
+).
+ Pow! As we mentioned, if you add or delete a list item, \SpecialChar LyX
+ will fix the numbering.
+\end_layout
+
+\begin_layout Standard
+While the list is still selected, you can change to the other two list environme
+nts, 
+\family sans
+Description
+\family default
+ and 
+\family sans
+List
+\begin_inset space \thinspace{}
+\end_inset
+
+
+\family default
+/
+\begin_inset space \thinspace{}
+\end_inset
+
+
+\family sans
+Labeling
+\family default
+ (
+\begin_inset Info
+type  "icon"
+arg   "layout Description"
+\end_inset
+
+ and 
+\begin_inset Info
+type  "icon"
+arg   "layout List"
+\end_inset
+
+), in order to see what they look like.
+ For those two environments, each list item is made up of a term, which
+ is the item's first word, followed by a definition, which is the rest of
+ the paragraph (until you hit 
+\family sans
+Return
+\family default
+).
+ The term is either typeset in boldface (
+\family sans
+Description
+\family default
+) or separated by a 
+\begin_inset Quotes eld
+\end_inset
+
+Tab
+\begin_inset Quotes erd
+\end_inset
+
+
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+But a typesetter's tab, which will change to fit the size of the largest
+ term, not a pathetic, rigid, unchangeable typewriter 
+\family sans
+Tab
+\family default
+.
+\end_layout
+
+\end_inset
+
+ (
+\family sans
+List
+\family default
+) from the rest of the paragraph.
+ If you want to have more than one word in the definition, then separate
+ the words with 
+\family sans
+Protected
+\begin_inset space ~
+\end_inset
+
+Space
+\family default
+s.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+Exercise
+\series default
+: Typeset the list in 
+\family typewriter
+example_raw.lyx
+\end_layout
+
+\begin_layout Standard
+You can nest lists within each other in all sorts of interesting ways.
+ An obvious example would be writing outlines.
+ Numbered and bulleted lists will have different numbering and bulleting
+ schemes for sublists.
+ See the 
+\emph on
+User's Guide
+\emph default
+ for details on the different sorts of lists and for examples of nestings.
+\end_layout
+
+\begin_layout Subsection
+Other environments: Verses, Quotations, and more
+\end_layout
+
+\begin_layout Standard
+There are two environments for setting quotations apart from surrounding
+ text: 
+\family sans
+Quote
+\family default
+ for short quotes and 
+\family sans
+Quotation
+\family default
+ for longer ones.
+ Computer code (the 
+\family sans
+\SpecialChar LyX
+-Code
+\family default
+ environment 
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+used in this Tutorial for the long typing examples
+\end_layout
+
+\end_inset
+
+) is written in a 
+\family typewriter
+typewriter
+\family default
+ font; this environment is the only place in \SpecialChar LyX
+ where you are allowed to use
+ multiple spaces to allow code indenting.
+ You can even write poetry using the 
+\family sans
+Verse
+\family default
+ style, using 
+\family sans
+Return
+\family default
+ to separate stanzas, and 
+\family sans
+Ctrl+Return
+\family default
+ to separate lines within a stanza.
+ See the 
+\emph on
+User's Guide
+\emph default
+ for more complete descriptions of all of the available \SpecialChar LyX
+ environments.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+Exercise
+\series default
+: Correctly typeset the 
+\family sans
+Quote, \SpecialChar LyX
+-Code,
+\family default
+ and 
+\family sans
+Verse
+\family default
+ in
+\begin_inset Newline newline
+\end_inset
+
+
+\family typewriter
+example_raw.lyx
+\end_layout
+
+\begin_layout Chapter
+Writing Documents
+\end_layout
+
+\begin_layout Standard
+The previous chapter hopefully allowed you to get used to writing in \SpecialChar LyX
+.
+ It introduced you to the basic editing operations in \SpecialChar LyX
+, as well as the powerful
+ method of writing with environments.
+ Most people who use \SpecialChar LyX
+, though, will want to write documents: papers, articles,
+ books, manuals, or letters.
+ This chapter is meant to take you from simply writing text with \SpecialChar LyX
+ to writing
+ a complete document.
+ It will introduce you to text classes, which allow you to write different
+ sorts of documents.
+ It will then describe many of the additions that turn text into a document,
+ such as titles, footnotes, cross references, bibliographies, and tables
+ of contents.
+\end_layout
+
+\begin_layout Section
+Document Classes
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:Document-Classes"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Different sorts of documents should be typeset differently.
+ For example, books are generally printed double-sided, while articles are
+ single-sided.
+ In addition, many documents contain special environments: letters contain
+ some environments — such as the sender's address and the signature — which
+ do not make sense in a book or article.
+ The \SpecialChar LyX
+ 
+\emph on
+document class
+\emph default
+
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+for \SpecialChar LaTeX
+ users: this is equivalent to the \SpecialChar LaTeX
+ document class
+\end_layout
+
+\end_inset
+
+ takes care of these large scale differences between different sorts of
+ documents.
+ This Tutorial, for example, was written in the 
+\family sans
+Book
+\family default
+ document class.
+ Document classes are another major part of the WYSIWYM philosophy; they
+ tell \SpecialChar LyX
+ how to typeset the document, so you do not need to know how.
+\end_layout
+
+\begin_layout Standard
+Your document is probably being written in the 
+\family sans
+Article
+\family default
+ document class.
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+That is usually the default document class
+\end_layout
+
+\end_inset
+
+ Try changing to other document classes (using the 
+\family sans
+Document\SpecialChar menuseparator
+Settings
+\family default
+ dialog) to see how they are typeset differently.
+ If you change your document to the 
+\family sans
+Book
+\family default
+ document class and look at the 
+\family sans
+Environment
+\family default
+ box, you will see that most of the allowed environments are the same.
+ However, you can now use the 
+\family sans
+Chapter
+\family default
+ environment.
+ If you are ever unsure about which environments you can use in a given
+ document class, just consult the 
+\family sans
+Environment
+\family default
+ box.
+\end_layout
+
+\begin_layout Standard
+Font sizes, one- or two-column printing, and page headings are just some
+ of the ways journals' typesettings differ from one another.
+ As the Computer Age continues to mature, journals have begun accepting
+ electronic submissions, creating \SpecialChar LaTeX
+ 
+\begin_inset Quotes eld
+\end_inset
+
+style files
+\begin_inset Quotes erd
+\end_inset
+
+ so that authors can submit correctly typeset articles.
+ \SpecialChar LyX
+ is set up to support this as well.
+ For example, \SpecialChar LyX
+ supports typesetting (and extra environments) for the American
+ Mathematics Society journals using the 
+\family sans
+Article
+\begin_inset space ~
+\end_inset
+
+(AMS)
+\family default
+ document class.
+\end_layout
+
+\begin_layout Standard
+Here is a very quick reference to some of the document classes.
+ See the 
+\emph on
+Special Document Classes
+\emph default
+ section of the 
+\emph on
+Additional Features
+\emph default
+ manual for many more details.
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="7" columns="2">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="0pt">
+<column alignment="center" valignment="top" width="0pt">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Name
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Notes
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+article
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+one-sided, no chapters
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+article (AMS)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+layout & environments for American Math Society
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+report
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+longer than article, two-sided
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+book
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+report + front and back matter
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+presentation
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+transparencies
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+letter
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+lots of extra environments for address, signature\SpecialChar ldots
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Templates: Writing a Letter
+\end_layout
+
+\begin_layout Standard
+One way to write a letter would be to open a new file, and choose a 
+\family sans
+Letter
+\family default
+ class in the 
+\family sans
+Document\SpecialChar menuseparator
+Settings
+\family default
+ dialog.
+ While this is the most obvious way to write a letter, it seems like extra
+ work.
+ Every time you write a business letter, you want to have your address,
+ the address to which you are sending it, a body, a signature, etc.
+ \SpecialChar LyX
+ therefore has a 
+\emph on
+template
+\emph default
+ for letters, which contains a sample letter; once you have a template,
+ you can just replace a couple of parts of the letter with your text each
+ time you write a letter.
+\end_layout
+
+\begin_layout Standard
+Open a new file with 
+\family sans
+File\SpecialChar menuseparator
+New
+\begin_inset space ~
+\end_inset
+
+from
+\begin_inset space ~
+\end_inset
+
+Template
+\family default
+.
+ Select 
+\family typewriter
+letter.lyx
+\family default
+ as the template.
+ Save and print the file to see how the various environments are typeset.
+\end_layout
+
+\begin_layout Standard
+When you look at the 
+\family sans
+Environment
+\family default
+ box, you will see several environments, like the 
+\family sans
+My
+\begin_inset space ~
+\end_inset
+
+Address
+\family default
+ environment, that do not exist in most other document classes.
+ Others, like 
+\family sans
+Description
+\family default
+, are familiar.
+ You can play around for a while to figure out how the various environments
+ work.
+ You will notice for example that the 
+\family sans
+Signature
+\family default
+ environment has the word 
+\begin_inset Quotes eld
+\end_inset
+
+Signature:
+\begin_inset Quotes erd
+\end_inset
+
+ in red before the actual text of the signature.
+ This word does not show up in the actual letter, as you will see if you
+ view/export the file.
+ It is just there to let you know where the signature goes.
+ Also, note that it does not matter where in the file the 
+\family sans
+Signature
+\family default
+ line is placed.
+ Remember, \SpecialChar LyX
+ is WYSIWYM; you can put the 
+\family sans
+Signature
+\family default
+ environment anywhere you want, but \SpecialChar LyX
+ knows that in the printout, the signature
+ should be at the end.
+\end_layout
+
+\begin_layout Standard
+A template is just a regular \SpecialChar LyX
+ file.
+ This means you can fill in your address and signature and save the file
+ as a new template.
+ From now on, any time you want to write a letter, you can use the new template
+ to save time.
+ We do not have to suggest an actual 
+\begin_inset Quotes eld
+\end_inset
+
+exercise
+\begin_inset Quotes erd
+\end_inset
+
+ here; just write a letter to someone!
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+One warning, if you are writing from a template.
+ If you erase all of the text in an environment — for example, if you erase
+ the whole 
+\family sans
+My
+\begin_inset space ~
+\end_inset
+
+Address
+\family default
+ field so that you can replace it with your own — and then you move the
+ cursor without writing any text, the environment may disappear.
+ This is because most environments cannot exist without any text in them.
+ Just reselect the environment from the 
+\family sans
+Environment
+\family default
+ box to get it back.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Templates can be a huge time-saver, and we urge you to use them whenever
+ possible.
+ In addition, they can help a person learn how to use some of the fancier
+ document classes.
+ Finally, they may be useful for a person who is configuring \SpecialChar LyX
+ for a bunch
+ of less computer-aware users.
+ When they are first learning \SpecialChar LyX
+, it will be less intimidating if they have
+ a letter template customized for their company, for example.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Document Titles
+\end_layout
+
+\begin_layout Standard
+\SpecialChar LyX
+ (like \SpecialChar LaTeX
+) considers the title — which may contain the actual title, the author,
+ the date, and even an abstract of a paper — to be a separate part of the
+ document.
+\end_layout
+
+\begin_layout Standard
+Go back to your first \SpecialChar LyX
+ document and make sure it is using the 
+\family sans
+Article
+\family default
+ document class.
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+You should not be using the letter any more, since the 
+\family sans
+Letter
+\family default
+ document class does not allow titles.
+\end_layout
+
+\end_inset
+
+ Type a title on the first line, and change the line to the 
+\family sans
+Title
+\family default
+ environment.
+ On the next line, type your name and change it to the 
+\family sans
+Author
+\family default
+ environment.
+ On the next line, write the date in the 
+\family sans
+Date
+\family default
+ environment.
+ Type a paragraph or two summarizing your document using the 
+\family sans
+Abstract
+\family default
+ environment.
+ Notice how the title is presented when it is printed out.
+ If you change the document format to Book, you will get a separate title
+ page, like the first page of this tutorial.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+Exercise
+\series default
+: Fix the title, date, and author in 
+\family typewriter
+example_raw.lyx
+\end_layout
+
+\begin_layout Section
+Labels and Cross-References
+\end_layout
+
+\begin_layout Standard
+You can label section headings, list items, formulas, footnotes, and floats
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+Floats are explained in the 
+\emph on
+User's Guide
+\emph default
+ and the 
+\emph on
+Embedded Objects
+\emph default
+ manual.
+\end_layout
+
+\end_inset
+
+ in your document.
+ Once you do so, you can refer to the element in other parts of the document,
+ using cross-references.
+ You can refer to a section's number, to the page on which the section begins
+ or to both.
+ As with section numbering, \SpecialChar LyX
+ also takes care of cross-reference numbering
+ for you.
+ Automatic management of labels and cross-references is among the most significa
+nt advantages of \SpecialChar LyX
+ (and \SpecialChar LaTeX
+) over conventional word processors.
+\end_layout
+
+\begin_layout Subsection
+Your first label
+\end_layout
+
+\begin_layout Standard
+Go to our second section, whose title is 
+\begin_inset Quotes eld
+\end_inset
+
+About This Document
+\begin_inset Quotes erd
+\end_inset
+
+.
+ Click at the end of the section title line, and select 
+\family sans
+Insert\SpecialChar menuseparator
+Label
+\family default
+ or the toolbar button 
+\begin_inset Info
+type  "icon"
+arg   "label-insert"
+\end_inset
+
+.
+ A dialog asks you for a label name, and gives you a suggestion.
+ When you click on 
+\family sans
+OK
+\family default
+, the label name will be placed in a box next to the section title.
+\end_layout
+
+\begin_layout Standard
+So far you have not done anything — the output will look exactly the same,
+ since labels do not show up in the printed document.
+ However, now that you have added a label, you can refer to that label with
+ cross-references.
+ We will do that next.
+\end_layout
+
+\begin_layout Subsection
+Your first cross-reference
+\end_layout
+
+\begin_layout Standard
+Place the cursor somewhere in Section
+\begin_inset space ~
+\end_inset
+
+2 of your document.
+ Type 
+\end_layout
+
+\begin_layout LyX-Code
+If you want to know more about this document,
+\begin_inset Newline newline
+\end_inset
+
+then see Section .
+\end_layout
+
+\begin_layout Standard
+Now, with the cursor before the final period, select 
+\family sans
+Insert\SpecialChar menuseparator
+Cross
+\begin_inset space ~
+\end_inset
+
+Reference
+\family default
+ or the toolbar button 
+\begin_inset Info
+type  "icon"
+arg   "dialog-show-new-inset ref"
+\end_inset
+
+.
+ The Cross-reference dialog pops up.
+ It shows a list of the possible labels you can reference.
+ At the moment, there should be only one, 
+\begin_inset Quotes eld
+\end_inset
+
+sec:About-This-Document
+\begin_inset Quotes erd
+\end_inset
+
+.
+ First, select the drop-down menu labeled 
+\begin_inset Quotes eld
+\end_inset
+
+Format
+\begin_inset Quotes erd
+\end_inset
+
+ and select 
+\begin_inset Quotes eld
+\end_inset
+
+<reference>
+\begin_inset Quotes erd
+\end_inset
+
+.
+ Then select 
+\begin_inset Quotes eld
+\end_inset
+
+sec:About-This-Document
+\begin_inset Quotes erd
+\end_inset
+
+ (it may be selected by default), and a reference marker will appear containing
+ 
+\begin_inset Quotes eld
+\end_inset
+
+Ref: sec:About-This-Document
+\begin_inset Quotes erd
+\end_inset
+
+ (To be really correct, you should put a 
+\family sans
+Protected
+\begin_inset space ~
+\end_inset
+
+Space
+\family default
+ (shortcut 
+\begin_inset Info
+type  "shortcut"
+arg   "command-alternatives math-space ; space-insert protected"
+\end_inset
+
+) in between the word 
+\begin_inset Quotes eld
+\end_inset
+
+Section
+\begin_inset Quotes erd
+\end_inset
+
+ and the reference.) An alternative way to reference a label is to right-click
+ the label and select 
+\family sans
+Copy as Reference
+\family default
+ in the pop-up context menu.
+ The cross-reference to this label is now in the clipboard and can be copied
+ to the actual cursor position via the menu 
+\family sans
+Edit\SpecialChar menuseparator
+Paste
+\family default
+ (shortcut 
+\begin_inset Info
+type  "shortcut"
+arg   "paste"
+\end_inset
+
+).
+ In the printed document, this reference marker will be replaced with the
+ section number.
+ Preview your document and you will see that \SpecialChar LaTeX
+ has been even cleverer than
+ that.
+ It refers to 
+\begin_inset Quotes eld
+\end_inset
+
+Section 2
+\begin_inset Quotes erd
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Conveniently, a cross-reference acts as a hyperlink when you are editing
+ a document in \SpecialChar LyX
+; clicking on it will pop up the 
+\family sans
+Cross-reference
+\family default
+ dialog, clicking 
+\family sans
+Go
+\begin_inset space ~
+\end_inset
+
+to
+\begin_inset space ~
+\end_inset
+
+Label
+\family default
+ will move the cursor to the referenced label.
+\end_layout
+
+\begin_layout Subsection
+More fun with labels
+\end_layout
+
+\begin_layout Standard
+We told you that \SpecialChar LyX
+ takes care of numbering cross-references; now you can
+ test this claim.
+ Add a new section before Section
+\begin_inset space ~
+\end_inset
+
+2.
+ Update the preview, and — voilà! — the section cross-reference changed
+ to 
+\begin_inset Quotes eld
+\end_inset
+
+3
+\begin_inset Quotes erd
+\end_inset
+
+! Change the section 
+\begin_inset Quotes eld
+\end_inset
+
+About this Document
+\begin_inset Quotes erd
+\end_inset
+
+ to a subsection, and the cross-reference will reference Subsection
+\begin_inset space ~
+\end_inset
+
+2.1 instead of Section
+\begin_inset space ~
+\end_inset
+
+3.
+ The page reference will not change unless you add a whole page of text
+ before the label, of course.
+ 
+\end_layout
+
+\begin_layout Standard
+If you want some more practice with labels, then try putting a new label
+ where your first cross-reference was, and refer to that label from elsewhere
+ in the document.
+ If you will be inserting cross-references often, it may be convenient to
+ leave the 
+\family sans
+Cross-reference
+\family default
+ dialog open.
+\end_layout
+
+\begin_layout Standard
+If you want to confirm that the cross-referencing gets the pages right even
+ for larger documents, 
+\family sans
+Copy
+\family default
+ a couple pages of text from the 
+\emph on
+User's Guide
+\emph default
+ to the clipboard, and 
+\family sans
+Paste
+\family default
+ them into your document.
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+By the way, copying a chapter title may cause an error, because chapters
+ are not allowed in the article class, see Section
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:Document-Classes"
+
+\end_inset
+
+.
+ If this happens, just delete the chapter title.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+Exercise
+\series default
+: Fix the references in 
+\family typewriter
+example_raw.lyx
+\end_layout
+
+\begin_layout Section
+Footnotes and Margin Notes
+\end_layout
+
+\begin_layout Standard
+Footnotes can be added using the toolbar button 
+\begin_inset Info
+type  "icon"
+arg   "footnote-insert"
+\end_inset
+
+ or the menu 
+\family sans
+Insert\SpecialChar menuseparator
+Footnote
+\family default
+.
+ Click at the end of the word 
+\begin_inset Quotes eld
+\end_inset
+
+\SpecialChar LyX
+
+\begin_inset Quotes erd
+\end_inset
+
+ somewhere in your document and insert a footnote.
+ A footnote box appears where you can enter the text of the footnote.
+ \SpecialChar LyX
+ should place the cursor at the beginning of the footnote box.
+ Type
+\end_layout
+
+\begin_layout LyX-Code
+\SpecialChar LyX
+ is a typesetting word processor.
+\end_layout
+
+\begin_layout Standard
+Now click on the button labeled 
+\begin_inset Quotes eld
+\end_inset
+
+foot
+\begin_inset Quotes erd
+\end_inset
+
+.
+ The footnote box is closed, leaving the button showing where the footnote
+ marker will be in the printed text; this is called 
+\begin_inset Quotes eld
+\end_inset
+
+folding
+\begin_inset Quotes erd
+\end_inset
+
+ the footnote.
+ You can unfold the footnote at any time and re-edit its text by clicking
+ again on the 
+\begin_inset Quotes eld
+\end_inset
+
+foot
+\begin_inset Quotes erd
+\end_inset
+
+ button.
+\end_layout
+
+\begin_layout Standard
+A footnote can be cut and pasted like normal text.
+ Go ahead; try it! All you need to do is select the footnote button
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+It may be easier to select it using the keyboard.
+ You might accidentally open the footnote if you are trying to select the
+ marker itself with the mouse.
+\end_layout
+
+\end_inset
+
+ and 
+\family sans
+Cut
+\family default
+ and 
+\family sans
+Paste
+\family default
+ it.
+ In addition, you can change regular text to a footnote, by selecting it
+ and hitting the 
+\begin_inset Info
+type  "icon"
+arg   "footnote-insert"
+\end_inset
+
+ button; change a footnote to regular text by hitting the 
+\family sans
+Backspace
+\family default
+ key when the cursor is in the first position of a footnote, or by hitting
+ the 
+\family sans
+Delete
+\family default
+ key when the cursor is in the very last position of the footnote.
+\end_layout
+
+\begin_layout Standard
+Margin notes can be added using the menu 
+\family sans
+Insert\SpecialChar menuseparator
+Marginal
+\begin_inset space ~
+\end_inset
+
+Note
+\family default
+ or the toolbar button 
+\begin_inset Info
+type  "icon"
+arg   "marginalnote-insert"
+\end_inset
+
+\SpecialChar endofsentence
+ Margin notes are like footnotes, except that: 
+\end_layout
+
+\begin_layout Itemize
+the on-screen boxes say 
+\begin_inset Quotes eld
+\end_inset
+
+margin
+\begin_inset Quotes erd
+\end_inset
+
+ instead of 
+\begin_inset Quotes eld
+\end_inset
+
+foot
+\begin_inset Quotes erd
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+the notes will be placed in the margin, instead of below the text 
+\end_layout
+
+\begin_layout Itemize
+margin notes are not numbered
+\end_layout
+
+\begin_layout Standard
+Change your \SpecialChar LyX
+ footnote back to text, then select and change it to a margin
+ note.
+ Run \SpecialChar LaTeX
+ again to see what the margin note looks like.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+Exercise
+\series default
+: Fix the footnote in 
+\family typewriter
+example_raw.lyx
+\end_layout
+
+\begin_layout Section
+Bibliographies
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:bibliographies"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Bibliographies are similar to cross-references.
+ The bibliography contains a list of references at the end of the document,
+ and they can be referenced from within the document.
+ Like section titles, \SpecialChar LyX
+ and \SpecialChar LaTeX
+ make your job easier by automatically numbering
+ the bibliography items and changing citations when the item numbers change.
+\end_layout
+
+\begin_layout Standard
+Go to the end of the document and switch to the 
+\family sans
+Bibliography
+\family default
+ environment.
+ Now, each paragraph you type will be a reference.
+ Type 
+\begin_inset Quotes eld
+\end_inset
+
+
+\family typewriter
+The Lyx Tutorial, by the \SpecialChar LyX
+ Documentation Team
+\family default
+
+\begin_inset Quotes erd
+\end_inset
+
+ as your first reference.
+ Note that \SpecialChar LyX
+ automatically puts a number in a box before each reference.
+ Click on the boxed reference number, and the 
+\family sans
+Bibliography
+\begin_inset space ~
+\end_inset
+
+item
+\family default
+ dialog box appears.
+ The 
+\family sans
+Key
+\family default
+ is to refer to this reference within the \SpecialChar LyX
+ document, the 
+\family sans
+Label
+\family default
+ appears in output.
+ When no 
+\family sans
+Label
+\family default
+ is set (default), you will see the number of the bibliography in the output.
+ Now change the 
+\family sans
+Key
+\family default
+ field to 
+\begin_inset Quotes eld
+\end_inset
+
+lyxtutorial
+\begin_inset Quotes erd
+\end_inset
+
+ to make it easy to remember.
+\end_layout
+
+\begin_layout Standard
+Now pick somewhere in your document that you would like to insert a reference.
+ Do so with 
+\family sans
+Insert\SpecialChar menuseparator
+Citation
+\family default
+ or the toolbar button 
+\begin_inset Info
+type  "icon"
+arg   "dialog-show-new-inset citation"
+\end_inset
+
+.
+ A 
+\family sans
+Citation
+\family default
+ dialog appears.
+ The left panel in this dialog lists all the bibliography entries, and this
+ field allows you to choose which bibliography item you want to cite.
+ Select 
+\begin_inset Quotes eld
+\end_inset
+
+lyxtutorial
+\begin_inset Quotes erd
+\end_inset
+
+ (right now, that is the only item in the bibliography), then use the 
+\family sans
+Add
+\family default
+ button in the center to insert it.
+ (You can have multiple citations in the same place by transferring a number
+ of keys this way.)
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+If one uses label names for references that are easy to remember it is easier
+ to find the entry in the list of references.
+\end_layout
+
+\end_inset
+
+ Click the 
+\family sans
+OK
+\family default
+ button.
+ Now preview your file and you will see that the citation appears in brackets
+ in the text, referring to the bibliography at the end of the document.
+\end_layout
+
+\begin_layout Standard
+The 
+\family sans
+Text
+\begin_inset space ~
+\end_inset
+
+after
+\family default
+ field in the 
+\family sans
+Citation
+\family default
+ dialog will put a remark (such as a reference to a page or chapter within
+ the referenced book or article) in the brackets after the reference.
+ If you want the references to have labels instead of numbers in the printed
+ output (for example, some journals would use 
+\begin_inset Quotes eld
+\end_inset
+
+[Smi95]
+\begin_inset Quotes erd
+\end_inset
+
+ to refer to a paper written by Smith in 1995), use the 
+\family sans
+Label
+\family default
+ field in the 
+\family sans
+Bibliography
+\begin_inset space ~
+\end_inset
+
+item
+\family default
+ dialog.
+ See the 
+\emph on
+User's Guide
+\emph default
+ for details.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+Exercise:
+\series default
+ Fix the bibliography and citation in 
+\family typewriter
+example_raw.lyx
+\end_layout
+
+\begin_layout Section
+Table of Contents
+\end_layout
+
+\begin_layout Standard
+You may want to put a table of contents at the beginning of your document.
+ \SpecialChar LyX
+ makes this easy to do.
+ Just hit 
+\family sans
+Return
+\family default
+ after your document title and before your first section title and select
+ 
+\family sans
+Insert\SpecialChar menuseparator
+List
+\begin_inset space ~
+\end_inset
+
+/
+\begin_inset space ~
+\end_inset
+
+TOC\SpecialChar menuseparator
+Table
+\begin_inset space ~
+\end_inset
+
+of
+\begin_inset space ~
+\end_inset
+
+Contents
+\family default
+.
+ The words 
+\begin_inset Quotes eld
+\end_inset
+
+Table of Contents
+\begin_inset Quotes erd
+\end_inset
+
+ will appear in a button on the first line of the document.
+ 
+\end_layout
+
+\begin_layout Standard
+This may not appear to be very useful.
+ However, if you look at your preview, you will see that a table of contents
+ has been generated, listing the various sections and subsections in your
+ document.
+ As usual, if you reorder sections or create new ones, you will see those
+ changes in the preview when you update it.
+ 
+\end_layout
+
+\begin_layout Standard
+The table of contents is not printed in the on-screen version of the document.
+ But you can display the table of contents in a separate window by clicking
+ on the table of contents button, or by using 
+\family sans
+View\SpecialChar menuseparator
+Outline
+\begin_inset space ~
+\end_inset
+
+Pane
+\family default
+ or the toolbar button 
+\begin_inset Info
+type  "icon"
+arg   "dialog-toggle toc"
+\end_inset
+
+.
+ This menu will work even if you do not have a table of contents inset in
+ your document.
+ This is a very useful tool for rearranging your document parts.
+ Clicking on a (sub)section title in the 
+\family sans
+Outline
+\family default
+ window will highlight that line and move the display (in the \SpecialChar LyX
+ editing window)
+ to that place in the document.
+ You can also use the arrow keys to move up and down in the table of contents.
+ You may therefore find it convenient to leave this window open throughout
+ editing sessions.
+ You can get similar functionality from the 
+\family sans
+Navigate
+\family default
+ menu, though, where the table of contents appears automatically.
+\end_layout
+
+\begin_layout Standard
+To get rid of the Table of Contents, you can delete the table of contents
+ button just like any other text.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+Exercise
+\series default
+: Fix the table of contents in 
+\family typewriter
+example_raw.lyx
+\end_layout
+
+\begin_layout Chapter
+Using Math
+\end_layout
+
+\begin_layout Standard
+\SpecialChar LaTeX
+ is used by many scientists because it outputs great looking equations,
+ avoiding the control characters used by word processors and their equation
+ editors.
+ Many of these scientists are frustrated, however, because writing equations
+ in \SpecialChar LaTeX
+ is more like programming than writing.
+ Happily, \SpecialChar LyX
+ has WYSIWYM support for equations.
+ If you are used to \SpecialChar LaTeX
+, you will find that all of the usual \SpecialChar LaTeX
+ math commands
+ can be typed in normally, but they will show up in a WYSIWYM fashion.
+ If, on the other hand, you have never written in \SpecialChar LaTeX
+, then the 
+\family sans
+Math
+\begin_inset space ~
+\end_inset
+
+Panel
+\family default
+ will allow you to write professional-looking math quickly and easily.
+\end_layout
+
+\begin_layout Section
+Math Mode
+\end_layout
+
+\begin_layout Standard
+Somewhere in your \SpecialChar LyX
+ document, type: 
+\end_layout
+
+\begin_layout LyX-Code
+I like what Einstein said, E=mc^2, because it is
+\begin_inset Newline linebreak
+\end_inset
+
+so simple.
+\end_layout
+
+\begin_layout Standard
+Now, that equation does not look very good in \SpecialChar LyX
+ and in the output; there
+ is no space between the letters and the equals sign, and you would like
+ to write an actual superscript for the 
+\begin_inset Quotes eld
+\end_inset
+
+2
+\begin_inset Quotes erd
+\end_inset
+
+.
+ That bad typesetting happened because we did not tell \SpecialChar LyX
+ that we were writing
+ a mathematical expression, so it typeset the equation like regular old
+ text.
+\end_layout
+
+\begin_layout Standard
+But we can create a formula that will be typeset properly.
+ Highlight the equation and click the toolbar button 
+\begin_inset Info
+type  "icon"
+arg   "math-mode"
+\end_inset
+
+ or use the menu 
+\family sans
+Insert\SpecialChar menuseparator
+Math\SpecialChar menuseparator
+Inline
+\begin_inset space ~
+\end_inset
+
+Formula
+\family default
+.
+ If nothing is highlighted \SpecialChar LyX
+ inserts a little blue square, which is an empty
+ math formula.
+ The expression appears in blue and the blue square disappears as soon as
+ the formula is not empty.
+ Now type 
+\family sans
+Esc
+\family default
+ to leave the equation.
+ The purple markers disappear, leaving the cursor to the right of the expression.
+ Now, if you type something, it will be regular text.
+\end_layout
+
+\begin_layout Standard
+Looking at the output you will notice that the expression was typeset nicely,
+ with spaces between the letters and the equals sign, and a superscript
+ 
+\begin_inset Quotes eld
+\end_inset
+
+2
+\begin_inset Quotes erd
+\end_inset
+
+.
+ Letters in math mode are assumed to be variables, and come out in italics.
+ Numbers are just numbers.
+\end_layout
+
+\begin_layout Standard
+This math editor is another example of the WYSIWYM philosophy.
+ In \SpecialChar LaTeX
+, you write a mathematical expression using text and commands like 
+\family typewriter
+
+\backslash
+sqrt
+\family default
+; this can be frustrating, because you cannot see what an expression looks
+ like until you run the file under \SpecialChar LaTeX
+ and you may have to spend time, for
+ example, finding missing brackets.
+ \SpecialChar LyX
+ does not attempt to get the expression to look perfect (WYSIWYG), but
+ it gives you an extremely good idea of what the expression will look like.
+ \SpecialChar LaTeX
+ then takes care of the professional typesetting.
+\end_layout
+
+\begin_layout Section
+Navigating an Equation
+\end_layout
+
+\begin_layout Standard
+Now let us change 
+\begin_inset Formula $E=mc^{2}$
+\end_inset
+
+ to 
+\begin_inset Formula $E=1+mc^{2}$
+\end_inset
+
+.
+ Use the arrow keys to move the cursor into the expression.
+ Note that when you enter the expression, the purple markers appear to let
+ you know you are editing math.
+ Now you can use 
+\family sans
+Left
+\family default
+ and 
+\family sans
+Right
+\family default
+ to move the cursor past the equals sign, and just type 
+\begin_inset Quotes eld
+\end_inset
+
+1+
+\begin_inset Quotes erd
+\end_inset
+
+.
+ Again, you can use the arrow keys or 
+\family sans
+Esc
+\family default
+ to leave the formula\SpecialChar endofsentence
+
+\end_layout
+
+\begin_layout Standard
+Other than the special keys described below, typing in math mode is like
+ editing regular text.
+ Use 
+\family sans
+Delete
+\family default
+ (or 
+\family sans
+Backspace
+\family default
+) to delete things.
+ Select text either with the arrow keys or with the mouse.
+ 
+\family sans
+Edit\SpecialChar menuseparator
+Undo
+\family default
+ works in math mode as well as cut and paste.
+ One thing to be careful of: if you are left or right outside a formula
+ and you press 
+\family sans
+Delete
+\family default
+ or 
+\family sans
+Backspace
+\family default
+ respectively, you delete the whole formula.
+ Luckily, you can just use 
+\family sans
+Undo
+\family default
+ to get it back.
+\end_layout
+
+\begin_layout Standard
+What if you want to change 
+\begin_inset Formula $E=mc^{2}$
+\end_inset
+
+ to 
+\begin_inset Formula $E=mc^{2.5}+1$
+\end_inset
+
+? Again, you can use the mouse to click in the right place.
+ However, you can also use the arrow keys.
+ If the cursor is just after the 
+\begin_inset Quotes eld
+\end_inset
+
+c
+\begin_inset Quotes erd
+\end_inset
+
+ but before the 
+\begin_inset Quotes eld
+\end_inset
+
+2
+\begin_inset Quotes erd
+\end_inset
+
+, then press 
+\family sans
+Up
+\family default
+ and the cursor is moved to the level of the superscript, just before the
+ 
+\begin_inset Quotes eld
+\end_inset
+
+2
+\begin_inset Quotes erd
+\end_inset
+
+.
+ Add the 
+\begin_inset Quotes eld
+\end_inset
+
+.5
+\begin_inset Quotes erd
+\end_inset
+
+.
+ Now, hitting 
+\family sans
+Down
+\family default
+ will move the cursor back to the regular level.
+ If you hit 
+\family sans
+Space
+\family default
+ instead of 
+\family sans
+Down
+\family default
+, the cursor will be placed 
+\emph on
+after
+\emph default
+ the superscript (so that you can then type the 
+\begin_inset Quotes eld
+\end_inset
+
++1
+\begin_inset Quotes erd
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Section
+Exponents and Indices
+\end_layout
+
+\begin_layout Standard
+An exponent can be entered from the 
+\family sans
+Math
+\begin_inset space ~
+\end_inset
+
+Toolbar
+\family default
+ (see below), but it is actually simpler just to type the caret key, 
+\begin_inset Quotes eld
+\end_inset
+
+^
+\begin_inset Quotes erd
+\end_inset
+
+.
+ \SpecialChar LyX
+ will place another blue rectangle in the superscript, so that whatever
+ you write next will be superscripted, and in a smaller font size.
+ Everything you type until you hit a 
+\family sans
+Space
+\family default
+ (or 
+\family sans
+Esc
+\family default
+ to exit the formula entirely) will be in the superscript.
+\end_layout
+
+\begin_layout Standard
+Writing a subscript (index) is just as easy; start one by typing the underscore
+ key 
+\begin_inset Quotes eld
+\end_inset
+
+_
+\begin_inset Quotes erd
+\end_inset
+
+.
+ You can subscript and superscript both subscripts and superscripts like
+ this: 
+\begin_inset Formula $A_{a_{0}+b^{2}}+C^{a_{0}+b^{2}}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+Exercise
+\series default
+: Put equation
+\begin_inset space ~
+\end_inset
+
+1 of 
+\family typewriter
+example_raw.lyx
+\family default
+ into math mode.
+\end_layout
+
+\begin_layout Section
+The Math toolbar
+\end_layout
+
+\begin_layout Standard
+The 
+\family sans
+Math
+\begin_inset space ~
+\end_inset
+
+toolbar
+\family default
+ is a convenient way to enter symbols and/or to perform complicated formula
+ operations.
+ Many of these operations can be accomplished from the keyboard or the 
+\family sans
+Insert\SpecialChar menuseparator
+Math
+\family default
+ or the 
+\family sans
+Edit\SpecialChar menuseparator
+Math
+\family default
+ menus (the latter only appears when you are in Math mode).
+ However, we are going to concentrate on using the 
+\family sans
+Math
+\begin_inset space ~
+\end_inset
+
+toolbar
+\family default
+, just to let you know what is out there; you can learn keyboard shortcuts
+ and commands later from the 
+\emph on
+Math
+\emph default
+ manual.
+\end_layout
+
+\begin_layout Standard
+The 
+\family sans
+Math
+\begin_inset space ~
+\end_inset
+
+toolbar
+\family default
+ is shown when the cursor is in a formula and can also be turned on manually
+ in the menu 
+\family sans
+View\SpecialChar menuseparator
+Toolbars
+\family default
+.
+ When you click there on 
+\begin_inset Quotes eld
+\end_inset
+
+Math
+\begin_inset Quotes erd
+\end_inset
+
+ (
+\begin_inset Info
+type  "icon"
+arg   "toolbar-toggle math"
+\end_inset
+
+) the toolbar will be shown permanently at the bottom; this state is visualized
+ in the 
+\family sans
+Toolbars
+\family default
+ menu with a checkmark.
+ When you click in this state again on 
+\begin_inset Quotes eld
+\end_inset
+
+Math
+\begin_inset Quotes erd
+\end_inset
+
+ in the 
+\family sans
+Toolbars
+\family default
+ menu, the 
+\family sans
+Math
+\begin_inset space ~
+\end_inset
+
+toolbar
+\family default
+ is only shown when the cursor is within a formula; this state is visualized
+ by the renaming of the menu entry from 
+\begin_inset Quotes eld
+\end_inset
+
+Math
+\begin_inset Quotes erd
+\end_inset
+
+ to 
+\begin_inset Quotes eld
+\end_inset
+
+Math
+\begin_inset space ~
+\end_inset
+
+(auto)
+\begin_inset Quotes erd
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection
+Greek and symbols
+\end_layout
+
+\begin_layout Standard
+The 
+\family sans
+Math
+\begin_inset space ~
+\end_inset
+
+toolbar
+\family default
+ allows you to choose from a large array of symbols used in math: operators,
+ arrows, relationships, delimiters, special characters, sums and integrals.
+ Note that subscripting and superscripting allow you to put lower and upper
+ limits on sums and integrals.
+\end_layout
+
+\begin_layout Subsection
+Roots, decorations, and delimiters
+\end_layout
+
+\begin_layout Standard
+To type a square root, just click on the button 
+\begin_inset Info
+type  "icon"
+arg   "math-insert \\sqrt"
+\end_inset
+
+.
+ The square root appears, and the cursor is in a new insertion point inside
+ the square root.
+ You can type variables, numbers, other square roots, fractions, whatever
+ you want.
+ \SpecialChar LyX
+ will automatically resize the square root to fit what is inside.
+\end_layout
+
+\begin_layout Standard
+Adding a 
+\begin_inset Quotes eld
+\end_inset
+
+frame decoration
+\begin_inset Quotes erd
+\end_inset
+
+ to a character (
+\begin_inset Formula $\overrightarrow{a}$
+\end_inset
+
+) or group of characters (
+\begin_inset Formula $\overrightarrow{a+b}$
+\end_inset
+
+) is done similarly.
+ Decorations are available from the toolbar via the button 
+\begin_inset Info
+type  "icon"
+arg   "math-insert \\hat"
+\end_inset
+
+.
+ Click on a decoration, and \SpecialChar LyX
+ will insert that decoration with an insertion
+ point under (or over) it.
+ Just type what you want in the insertion point.
+ There are two sets of decorations: those that resize with the text you
+ type, and those that have a fixed size, and are most appropriate for a
+ single letter.
+ 
+\end_layout
+
+\begin_layout Standard
+Delimiters such as parentheses, brackets, and braces work similarly, but
+ are a bit more complicated.
+ Hit the delimiter button 
+\begin_inset Info
+type  "icon"
+arg   "dialog-show mathdelimiter"
+\end_inset
+
+ to pop up the 
+\family sans
+Delimiter
+\family default
+ dialog.
+ Your current selection of delimiters is displayed in a box.
+ It is a pair of parentheses by default, but you can choose a pair of braces,
+ a brace and a parenthesis, or choose the empty square to have something
+ like 
+\begin_inset Quotes eld
+\end_inset
+
+
+\begin_inset Formula $a=\left\langle 7\right.$
+\end_inset
+
+
+\begin_inset Quotes erd
+\end_inset
+
+ (the empty delimiter is displayed as a broken line in \SpecialChar LyX
+, but will not show
+ up in the output).
+\end_layout
+
+\begin_layout Standard
+If you are lazy, you can type actual parentheses in math mode, rather than
+ using the 
+\family sans
+Delimiter
+\family default
+ dialog.
+ However, those parentheses will be the same size as regular text, which
+ will look bad if you have a big fraction or matrix inside the parentheses.
+ So it is better to use one of the three delimiter buttons that insert them
+ directly, for example 
+\begin_inset Info
+type  "icon"
+arg   "math-delim ( )"
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+You can also put delimiters or a square root sign or a decoration on already
+ existing formula parts.
+ Select the portion of the formula that you want to adjust, and then click
+ on the button you want from the 
+\family sans
+Math
+\begin_inset space ~
+\end_inset
+
+Toolbar
+\family default
+.
+ Try using this to change Newton's second law from scalar to vector form
+ (
+\begin_inset Formula $f=ma$
+\end_inset
+
+ to 
+\begin_inset Formula $\overrightarrow{f}=m\overrightarrow{a}$
+\end_inset
+
+).
+ Once you have  learned about matrices, this is how you will put parentheses
+ or brackets around them.
+\end_layout
+
+\begin_layout Subsection
+Fractions
+\end_layout
+
+\begin_layout Standard
+To create a fraction, click on the fraction button 
+\begin_inset Info
+type  "icon"
+arg   "math-insert \\frac-square"
+\end_inset
+
+ in the 
+\family sans
+Math
+\begin_inset space ~
+\end_inset
+
+Toolbar
+\family default
+.
+ \SpecialChar LyX
+ writes two insertion points in a fraction.
+ As you would expect, you can use arrow keys or the mouse to move around
+ a fraction.
+ Click on the top square and type 
+\begin_inset Quotes eld
+\end_inset
+
+1
+\begin_inset Quotes erd
+\end_inset
+
+.
+ Now hit 
+\family sans
+Down
+\family default
+ and type 
+\begin_inset Quotes eld
+\end_inset
+
+2
+\begin_inset Quotes erd
+\end_inset
+
+.
+ You have made a fraction! Of course you can type anything within each of
+ the two boxes: variables with exponents, square roots, other fractions,
+ whatever.
+ 
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+Exercise
+\series default
+: Put equation
+\begin_inset space ~
+\end_inset
+
+2 of 
+\family typewriter
+example_raw.lyx
+\family default
+ into math mode.
+\end_layout
+
+\begin_layout Subsection
+Functions: lim, log, sin and others
+\end_layout
+
+\begin_layout Standard
+Because letters in math mode are considered to be variables, if you type
+ 
+\begin_inset Quotes eld
+\end_inset
+
+sin
+\begin_inset Quotes erd
+\end_inset
+
+ in math mode, \SpecialChar LyX
+ thinks you are typing the product of the three variables
+ 
+\begin_inset Formula $s$
+\end_inset
+
+, 
+\begin_inset Formula $i$
+\end_inset
+
+, and 
+\begin_inset Formula $n$
+\end_inset
+
+.
+ The three letters will be typeset in italics, when what you really wanted
+ was the word 
+\begin_inset Quotes eld
+\end_inset
+
+sin
+\begin_inset Quotes erd
+\end_inset
+
+ typeset in Roman.
+ In addition, \SpecialChar LyX
+ will not put a space between the word 
+\begin_inset Quotes eld
+\end_inset
+
+sin
+\begin_inset Quotes erd
+\end_inset
+
+ and the 
+\begin_inset Quotes eld
+\end_inset
+
+x
+\begin_inset Quotes erd
+\end_inset
+
+ (pressing 
+\family sans
+Space
+\family default
+ will exit the formula).
+ So how do you get 
+\begin_inset Quotes eld
+\end_inset
+
+
+\begin_inset Formula $\sin(x)$
+\end_inset
+
+
+\begin_inset Quotes erd
+\end_inset
+
+ instead of 
+\begin_inset Quotes eld
+\end_inset
+
+
+\begin_inset Formula $sin(x)$
+\end_inset
+
+
+\begin_inset Quotes erd
+\end_inset
+
+?
+\end_layout
+
+\begin_layout Standard
+Click on the 
+\family sans
+Math
+\begin_inset space ~
+\end_inset
+
+Toolbar
+\family default
+ button 
+\begin_inset Info
+type  "icon"
+arg   "math-insert \\functions"
+\end_inset
+
+ and then on 
+\begin_inset Quotes eld
+\end_inset
+
+sin
+\begin_inset Quotes erd
+\end_inset
+
+ in the pop-up function list.
+ The word 
+\begin_inset Quotes eld
+\end_inset
+
+sin
+\begin_inset Quotes erd
+\end_inset
+
+ is displayed in \SpecialChar LyX
+ in black, and set in upright roman type.
+ The whole word is treated as one symbol, so if you type 
+\family sans
+Backspace
+\family default
+, it will delete the whole word.
+ Now type 
+\begin_inset Quotes eld
+\end_inset
+
+(x)
+\begin_inset Quotes erd
+\end_inset
+
+, which will be written in blue italics, like you expect in a formula.
+ In the output, the expression will be correctly typeset.
+ Try it out.
+\end_layout
+
+\begin_layout Standard
+The function list includes other trigonometric functions and their inverses,
+ hyperbolic functions, logarithms, limits, and quite a few others.
+ These functions can take subscripts and superscripts, important for typing
+ 
+\begin_inset Quotes eld
+\end_inset
+
+
+\begin_inset Formula $\cos^{2}\theta$
+\end_inset
+
+
+\begin_inset Quotes erd
+\end_inset
+
+ or 
+\begin_inset Quotes eld
+\end_inset
+
+
+\begin_inset Formula $\lim_{n\rightarrow\infty}$
+\end_inset
+
+
+\begin_inset Quotes erd
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+Exercise
+\series default
+: Put equation
+\begin_inset space ~
+\end_inset
+
+3 of 
+\family typewriter
+example_raw.lyx
+\family default
+ into math mode.
+\end_layout
+
+\begin_layout Subsection
+Matrices
+\end_layout
+
+\begin_layout Standard
+Click on the matrix button 
+\begin_inset Info
+type  "icon"
+arg   "dialog-show mathmatrix"
+\end_inset
+
+ in the 
+\family sans
+Math
+\begin_inset space ~
+\end_inset
+
+Toolbar
+\family default
+.
+ A pop-up dialog allows you to choose how many rows and columns you want
+ in your matrix.
+ Choose 2 rows and 3 columns and hit 
+\family sans
+OK
+\family default
+.
+ \SpecialChar LyX
+ prints 6 insertion points in a 
+\begin_inset Formula $2\times3$
+\end_inset
+
+ matrix.
+ As usual, you can put any sort of formula expression (a square root, another
+ matrix, etc.) in each insertion point.
+ You can also leave some of the insertion points empty if you want.
+\end_layout
+
+\begin_layout Standard
+
+\family sans
+Tab
+\family default
+ can be used to move horizontally between the columns of a matrix.
+ Alternatively, you can use the arrow keys to move around - hitting 
+\family sans
+Right
+\family default
+ at the end of one box will move to the next box, 
+\family sans
+Down
+\family default
+ will move to the next row, etc.
+\end_layout
+
+\begin_layout Standard
+If you need to change the number of rows and columns, use the menu 
+\family sans
+Edit\SpecialChar menuseparator
+Rows
+\begin_inset space \thinspace{}
+\end_inset
+
+&
+\begin_inset space \thinspace{}
+\end_inset
+
+Columns
+\family default
+ or the math toolbar buttons 
+\begin_inset Info
+type  "icon"
+arg   "tabular-feature append-row"
+\end_inset
+
+, 
+\begin_inset Info
+type  "icon"
+arg   "tabular-feature delete-row"
+\end_inset
+
+, 
+\begin_inset Info
+type  "icon"
+arg   "tabular-feature append-column"
+\end_inset
+
+, 
+\begin_inset Info
+type  "icon"
+arg   "tabular-feature delete-column"
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+See the 
+\emph on
+User's Guide
+\emph default
+ for information on how to change the horizontal alignment of each column,
+ and how to change the vertical position of the whole matrix.
+ Note that if you want to write a table containing text, you should use
+ \SpecialChar LyX
+'s wonderful table support, rather than trying to write text in a matrix.
+\end_layout
+
+\begin_layout Subsection
+Display mode
+\end_layout
+
+\begin_layout Standard
+All of the expressions we have written so far have been on the same line
+ as the text that came before and after them, otherwise known as inline
+ expressions.
+ This is fine for short, simple expressions, but if you want to write larger
+ ones, or if you want your expressions to stand out from the text, you need
+ to write them in display mode.
+ In addition, only displayed expressions can be labeled and numbered (see
+ the 
+\emph on
+User's Guide
+\emph default
+), and multi-line equations must be in display mode.
+\end_layout
+
+\begin_layout Standard
+While being in a formula, click on the display button 
+\begin_inset Info
+type  "icon"
+arg   "math-display"
+\end_inset
+
+ in the 
+\family sans
+Math Toolbar
+\family default
+.
+ This centers the formula and adds a blank line before and after it.
+ Now type in an expression and compile your file to see how it looks.
+ The display button is actually a toggle; use it now to change a couple
+ of your expressions to display mode and back.
+ 
+\end_layout
+
+\begin_layout Standard
+Display mode has a couple differences from inline mode:
+\end_layout
+
+\begin_layout Itemize
+The default font is larger for a few symbols, like 
+\begin_inset Formula $\sum$
+\end_inset
+
+ and 
+\begin_inset Formula $\int$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Subscripts and superscripts for limits and sums (but not integrals) are
+ written under and over rather than next to the symbols
+\end_layout
+
+\begin_layout Itemize
+Text is centered
+\end_layout
+
+\begin_layout Standard
+Other than these differences, though, displayed expressions and inline expressio
+ns are very similar.
+\end_layout
+
+\begin_layout Standard
+One final note about the way displayed formulas are typeset: be careful
+ about whether you are putting your equation into a new paragraph or not.
+ If your formula is in the middle of a sentence or paragraph, then do not
+ press 
+\family sans
+Return
+\family default
+.
+ Doing so will cause the text 
+\emph on
+after
+\emph default
+ the formula to start a new paragraph.
+ That text will be indented or follow a blank line, depending on your document
+ paragraph settings, which is probably not what you want.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+Exercise
+\series default
+: Put the various equations in 
+\family typewriter
+example_raw.lyx
+\family default
+ into display mode, and see how they are typeset differently.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+Exercise
+\series default
+: Using various tools you have learned in this section, you should be able
+ to write an equation like:
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+After you have  done it the hard way, give 
+\family sans
+Insert\SpecialChar menuseparator
+Math\SpecialChar menuseparator
+Cases
+\begin_inset space ~
+\end_inset
+
+Environment
+\family default
+ a try.
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Formula 
+\[
+f(x)=\left\{ \begin{array}{cc}
+\log_{8}x & x>0\\
+0 & x=0\\
+\sum_{i=1}^{5}\alpha_{i}+\sqrt{-\frac{1}{x}} & x<0
+\end{array}\right.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+More Math Stuff
+\end_layout
+
+\begin_layout Standard
+Now you are familiar with the basics.
+ \SpecialChar LyX
+'s math editor can do a lot more.
+ You can refer to the 
+\emph on
+Math
+\emph default
+ manual for tips on how to:
+\end_layout
+
+\begin_layout Itemize
+Label and number expressions.
+\end_layout
+
+\begin_layout Itemize
+Create multi-line equations.
+\end_layout
+
+\begin_layout Itemize
+Change typefaces, e.
+\begin_inset space \thinspace{}
+\end_inset
+
+g.
+\begin_inset space \space{}
+\end_inset
+
+to write bold-face text in an expression.
+\end_layout
+
+\begin_layout Itemize
+Fine-tune font sizes and spacing within an expression.
+ (Do not worry about this until your final draft!)
+\end_layout
+
+\begin_layout Itemize
+Write macros.
+ These are very powerful, because you just define them once at the top of
+ the document, and then you can use them throughout the document.
+\end_layout
+
+\begin_layout Itemize
+Do almost all you can do with math.
+\end_layout
+
+\begin_layout Chapter
+Miscellaneous
+\end_layout
+
+\begin_layout Section
+Other major \SpecialChar LyX
+ Features
+\end_layout
+
+\begin_layout Standard
+We have not gone through all the possible commands in \SpecialChar LyX
+, and we are not planning
+ on it.
+ As usual, see the 
+\emph on
+User's Guide
+\emph default
+ and the 
+\emph on
+Embedded
+\begin_inset space ~
+\end_inset
+
+Objects
+\emph default
+ manual for more information.
+ We will just mention a couple more major things \SpecialChar LyX
+ can do:
+\end_layout
+
+\begin_layout Itemize
+\SpecialChar LyX
+ has WYSIWYM support for tables.
+ Use the 
+\family sans
+Insert\SpecialChar menuseparator
+Table
+\family default
+ (toolbar button 
+\begin_inset Info
+type  "icon"
+arg   "tabular-insert"
+\end_inset
+
+) to get a table.
+ Click on the table with the 
+\emph on
+right button
+\emph default
+ to get a 
+\family sans
+Table
+\begin_inset space ~
+\end_inset
+
+Settings
+\family default
+ dialog box which allows extensive table editing.
+ By pressing 
+\begin_inset Info
+type  "icon"
+arg   "toolbar-toggle table"
+\end_inset
+
+ the table toolbar will appear permanently.
+\end_layout
+
+\begin_layout Itemize
+\SpecialChar LyX
+ also supports including pictures in any format within documents.
+ (You guessed it: 
+\family sans
+Insert\SpecialChar menuseparator
+Graphics
+\family default
+ (toolbar button 
+\begin_inset Info
+type  "icon"
+arg   "dialog-show-new-inset graphics"
+\end_inset
+
+).
+ Then browse for the figure file, rotate or scale it, etc.) Tables and figures
+ can have captions, and \SpecialChar LyX
+ will automatically generate lists of figures and/or
+ tables.
+\end_layout
+
+\begin_layout Itemize
+\SpecialChar LyX
+ is heavily configurable.
+ Everything from how the \SpecialChar LyX
+ window looks to how the output comes out can be
+ configured in a number of ways.
+ Much configuration is done through 
+\family sans
+Tools\SpecialChar menuseparator
+Preferences
+\family default
+.
+ For more information on this, check out 
+\family sans
+Help\SpecialChar menuseparator
+Customization\SpecialChar endofsentence
+
+\end_layout
+
+\begin_layout Itemize
+\SpecialChar LyX
+ is being developed by a team of programmers on five continents.
+ Therefore, \SpecialChar LyX
+ has better support for non-English languages (such as Dutch,
+ German, French, Greek, Czech, Turkish, \SpecialChar ldots
+) than many word processors.
+ Even the right-to-left languages Arabic, Farsi, and Hebrew and the Asian
+ languages Chinese Japanese, and Korean are supported.
+ You can write documents in other languages and you can also configure \SpecialChar LyX
+
+ to show its menus and error messages in other languages.
+ 
+\end_layout
+
+\begin_layout Itemize
+The \SpecialChar LyX
+ menus feature keybindings.
+ This means that you can do 
+\family sans
+File\SpecialChar menuseparator
+Open
+\family default
+ by pressing 
+\family sans
+Alt+F
+\family default
+ followed by 
+\family sans
+O
+\family default
+ or by using the binding which is shown next to it in the menu (
+\begin_inset Info
+type  "shortcut"
+arg   "file-open"
+\end_inset
+
+ by default).
+ Keybindings are also configurable.
+ For information on this, check out 
+\family sans
+Help\SpecialChar menuseparator
+Customization\SpecialChar endofsentence
+
+\end_layout
+
+\begin_layout Itemize
+\SpecialChar LyX
+ can read \SpecialChar LaTeX
+ documents.
+ See section
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:tex2lyx"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+Spell-checking, thesaurus, and word count facilities are available.
+\end_layout
+
+\begin_layout Itemize
+Generation of indexes and nomenclatures/glossaries is supported.
+\end_layout
+
+\begin_layout Section
+\SpecialChar LyX
+ for \SpecialChar LaTeX
+ Users
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:latexusers"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+If you do not know anything about \SpecialChar LaTeX
+, you do not have to read this section.
+ Actually, you might want to 
+\emph on
+learn
+\emph default
+ about \SpecialChar LaTeX
+, and then read this chapter.
+ However, some of those who begin to use \SpecialChar LyX
+ will be familiar with \SpecialChar LaTeX
+.
+ If you are such a person, you may be wondering if \SpecialChar LyX
+ can really do everything
+ \SpecialChar LaTeX
+ can do.
+ The short answer is that \SpecialChar LyX
+ can do pretty much everything \SpecialChar LaTeX
+ can do in one
+ form or another, and it definitely simplifies most parts of writing a \SpecialChar LaTeX
+
+ document.
+\end_layout
+
+\begin_layout Standard
+Because this is just a tutorial, we are only going to mention things that
+ new \SpecialChar LyX
+ users will most likely be interested in.
+ In the interests of keeping the Tutorial short, we will give only minimal
+ information here.
+ The 
+\emph on
+Additional
+\begin_inset space ~
+\end_inset
+
+Features
+\emph default
+ and the 
+\emph on
+Embedded
+\begin_inset space ~
+\end_inset
+
+Objects
+\emph default
+ manuals have a great deal of information on differences between \SpecialChar LyX
+ and \SpecialChar LaTeX
+,
+ and how to do various \SpecialChar LaTeX
+ tricks in \SpecialChar LyX
+.
+\end_layout
+
+\begin_layout Subsection
+\SpecialChar TeX
+ Mode 
+\end_layout
+
+\begin_layout Standard
+Anything that you enter in \SpecialChar TeX
+ mode will be passed straight to \SpecialChar LaTeX
+, and will be
+ displayed in red on the screen.
+ You can use \SpecialChar TeX
+ commands in \SpecialChar LyX
+ by choosing 
+\family sans
+Insert\SpecialChar menuseparator
+TeX
+\begin_inset space ~
+\end_inset
+
+Code
+\family default
+ (toolbar button 
+\begin_inset Info
+type  "icon"
+arg   "ert-insert"
+\end_inset
+
+).
+ This creates a box where everything within it is passed straight to \SpecialChar LaTeX
+.
+\end_layout
+
+\begin_layout Standard
+In a math formula, \SpecialChar TeX
+ mode is handled a bit differently.
+ \SpecialChar TeX
+ mode is entered there by typing a backslash.
+ The backslash is not written out, but anything you type afterwards will
+ be in red.
+ You exit \SpecialChar TeX
+ mode by typing 
+\family sans
+Space
+\family default
+ or some other non-alphabetic character, like a number, underscore, caret
+ or parenthesis.
+ Once you exit \SpecialChar TeX
+ mode, if \SpecialChar LyX
+ knows the \SpecialChar TeX
+ command you have typed in, it will
+ convert it to WYSIWYM\SpecialChar endofsentence
+ So if you type 
+\begin_inset Quotes eld
+\end_inset
+
+
+\family typewriter
+
+\backslash
+gamma
+\family default
+
+\begin_inset Quotes erd
+\end_inset
+
+ in a formula and then press 
+\family sans
+Space
+\family default
+, \SpecialChar LyX
+ will change the red 
+\begin_inset Quotes eld
+\end_inset
+
+gamma
+\begin_inset Quotes erd
+\end_inset
+
+ to a blue 
+\begin_inset Quotes eld
+\end_inset
+
+
+\begin_inset Formula $\gamma$
+\end_inset
+
+
+\begin_inset Quotes erd
+\end_inset
+
+.
+ This will work for almost all, non-complicated math macros.
+ This may be faster than using the 
+\family sans
+Math
+\begin_inset space ~
+\end_inset
+
+Toolbar
+\family default
+, and will be especially convenient for experienced \SpecialChar LaTeX
+ users.
+\end_layout
+
+\begin_layout Standard
+As a special case, if you type 
+\begin_inset Quotes eld
+\end_inset
+
+
+\family typewriter
+
+\backslash
+{
+\family default
+
+\begin_inset Quotes erd
+\end_inset
+
+ in a formula, the beginning 
+\emph on
+and
+\emph default
+ ending braces will be inserted in red while the cursor is placed between
+ the braces.
+ This makes it more convenient to type those commands that take an argument.
+\end_layout
+
+\begin_layout Standard
+\SpecialChar LyX
+ cannot do absolutely everything that \SpecialChar LaTeX
+ can do.
+ Some fancy functions are not supported at all, while some work but are
+ not WYSIWYM.
+ \SpecialChar TeX
+ mode allows users to get the full flexibility of \SpecialChar LaTeX
+, while having all the
+ convenient features of \SpecialChar LyX
+, like WYSIWYM math, tables, and editing.
+ \SpecialChar LyX
+ could never support every \SpecialChar LaTeX
+ package.
+ However, by typing 
+\family typewriter
+
+\backslash
+usepackage{foo}
+\family default
+ in the preamble (see Section
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:preamble"
+
+\end_inset
+
+), you can use any package you want — although you will not have WYSIWYM
+ support for that package's features.
+\end_layout
+
+\begin_layout Subsection
+Importing \SpecialChar LaTeX
+ Documents — 
+\family typewriter
+tex2lyx
+\family default
+
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:tex2lyx"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+You can import a \SpecialChar LaTeX
+ file into \SpecialChar LyX
+ by using the 
+\family sans
+File\SpecialChar menuseparator
+Import\SpecialChar menuseparator
+LaTeX
+\begin_inset space ~
+\end_inset
+
+(plain)
+\family default
+ menu in \SpecialChar LyX
+.
+ This will call the program 
+\family typewriter
+tex2lyx
+\family default
+ which will create a file foo.lyx from the file foo.tex.
+ \SpecialChar LyX
+ will then open that file.
+ If the translation does not work, you can try calling 
+\family typewriter
+tex2lyx
+\family default
+ from the command line, possibly using fancier options.
+\end_layout
+
+\begin_layout Standard
+Even when the translation does work, 
+\family typewriter
+tex2lyx
+\family default
+ may not translate everything, though it does handle most legal \SpecialChar LaTeX
+.
+ It will leave things it does not understand in \SpecialChar TeX
+ mode; so, after translating
+ a file with 
+\family typewriter
+tex2lyx
+\family default
+, you can look for the red text and manually edit it to get it right.
+\end_layout
+
+\begin_layout Standard
+
+\family typewriter
+tex2lyx
+\family default
+ has its own documentation (manpage), which Unix/Linux users can access
+ via the console command 
+\family typewriter
+man
+\begin_inset space ~
+\end_inset
+
+tex2lyx
+\family default
+.
+ The manpage describes which \SpecialChar LaTeX
+ commands and environments are not supported,
+ what bugs you might run into (and how to get around them), and how to use
+ the various options.
+\end_layout
+
+\begin_layout Standard
+It is important to understand that 
+\family typewriter
+tex2lyx
+\family default
+ can only translate files whose document class is 
+\begin_inset Quotes eld
+\end_inset
+
+known
+\begin_inset Quotes erd
+\end_inset
+
+ to \SpecialChar LyX
+, that is, for which there is a corresponding \SpecialChar LyX
+ 
+\family sans
+layout file
+\family default
+.
+ If there is no layout file, then you will get an error saying that the
+ conversion could not be performed.
+ So, unless you have a layout for the document class of your \SpecialChar LaTeX
+ file, 
+\family typewriter
+tex2lyx
+\family default
+ simply will not know how to translate the \SpecialChar LaTeX
+ that it finds there into things
+ \SpecialChar LyX
+ understands.
+ More about layout files and how they are created is explained in detail
+ in Chapter 5 of the 
+\emph on
+Customization
+\emph default
+ manual.
+\end_layout
+
+\begin_layout Subsection
+Converting \SpecialChar LyX
+ Documents to \SpecialChar LaTeX
+
+\end_layout
+
+\begin_layout Standard
+You might wish to convert a \SpecialChar LyX
+ Document to a \SpecialChar LaTeX
+ file.
+ For example, a co-worker or co-author who does not have \SpecialChar LyX
+ might want to
+ read it.
+ Select 
+\family sans
+File\SpecialChar menuseparator
+Export\SpecialChar menuseparator
+LaTeX
+\family default
+.
+ This will create a file 
+\family typewriter
+whatever.tex
+\family default
+ from the 
+\family typewriter
+whatever.lyx
+\family default
+ file you are editing.
+\end_layout
+
+\begin_layout Subsection
+\SpecialChar LaTeX
+ Preamble
+\end_layout
+
+\begin_layout Subsubsection
+Document Class
+\end_layout
+
+\begin_layout Standard
+The 
+\family sans
+Document\SpecialChar menuseparator
+Settings
+\family default
+ dialog takes care of the document-wide options, such as changing the document
+ class, default font size and paper size.
+ Document class options and also options for \SpecialChar LaTeX
+ packages can be entered there
+ in the 
+\family sans
+Class
+\begin_inset space ~
+\end_inset
+
+options
+\family default
+ area.
+\end_layout
+
+\begin_layout Subsubsection
+Other Preamble Matter
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:preamble"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+If you have special commands to put in the preamble of a \SpecialChar LaTeX
+ file, you can
+ use them in a \SpecialChar LyX
+ document as well.
+ Select 
+\family sans
+Document\SpecialChar menuseparator
+Settings\SpecialChar menuseparator
+LaTeX
+\begin_inset space ~
+\end_inset
+
+Preamble
+\family default
+ and type in the dialog window (or from the document settings dialog, depending
+ on the frontend).
+ Anything you type will (as with \SpecialChar TeX
+ mode) be sent directly to \SpecialChar LaTeX
+.
+\end_layout
+
+\begin_layout Subsection
+Bib\SpecialChar TeX
+
+\end_layout
+
+\begin_layout Standard
+\SpecialChar LyX
+ has support for Bib\SpecialChar TeX
+, which allows you to build databases of bibliographical
+ references to be used in multiple documents.
+ Select 
+\family sans
+Insert\SpecialChar menuseparator
+List
+\begin_inset space \thinspace{}
+\end_inset
+
+/
+\begin_inset space \thinspace{}
+\end_inset
+
+TOC\SpecialChar menuseparator
+BibTeX
+\begin_inset space ~
+\end_inset
+
+Bibliography
+\family default
+ to include a 
+\family typewriter
+Bib\SpecialChar TeX
+
+\family default
+ file.
+ In the 
+\family sans
+Database
+\family default
+ field you load Bib\SpecialChar TeX
+ files, in the 
+\family sans
+Style
+\family default
+ field you can load Bib\SpecialChar TeX
+ style files.
+\end_layout
+
+\begin_layout Standard
+After you have done this, you can use citations from any bibliographies
+ you have included with 
+\family sans
+Insert\SpecialChar menuseparator
+Citation
+\family default
+ (see Section
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:bibliographies"
+
+\end_inset
+
+).
+ The box in the 
+\family sans
+Citation
+\family default
+ dialog will show a list of all the references in your 
+\family typewriter
+Bib\SpecialChar TeX
+
+\family default
+ file.
+\end_layout
+
+\begin_layout Section
+Errors!
+\end_layout
+
+\begin_layout Standard
+Sometimes when you try to view a document, there will be errors, things
+ that \SpecialChar LyX
+ or \SpecialChar LaTeX
+ cannot understand.
+ When this happens, \SpecialChar LyX
+ will open a 
+\family sans
+\SpecialChar LaTeX
+
+\begin_inset space ~
+\end_inset
+
+Errors
+\family default
+ dialog.
+ Clicking on individual errors in this dialog will take you to the place
+ in the \SpecialChar LyX
+ document where the error occurs and also display the detailed \SpecialChar LaTeX
+
+ error message.
+\end_layout
+
+\end_body
+\end_document

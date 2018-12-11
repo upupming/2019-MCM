@@ -1,0 +1,457 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\use_default_options false
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures false
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize 12
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 0
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle plain
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+THIS IS THE TITLE OF THE DOCUMENT 
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
+Hint: the title should look more like a title
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Author
+by Fee \SpecialChar LyX
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Hint: Fee is the AUTHOR
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Date
+June 12, 1972
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
+Hint: this is a DATE
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset toc
+LatexCommand tableofcontents
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Basic Philosophy
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Hint: Section titles should probably stand out more
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The basic philosophy of \SpecialChar LyX
+ is that you should worry about the content of what
+ you're writing and not the form.
+\end_layout
+
+\begin_layout Subsection
+How \SpecialChar LyX
+ does it
+\end_layout
+
+\begin_layout Standard
+\SpecialChar LyX
+ uses \SpecialChar LaTeX
+, a document preparation system designed by Leslie Lamport in 1985.
+ It, in turn, was built up from a typesetting language called \SpecialChar TeX
+, created
+ by Donald Knuth in 1984.
+ \SpecialChar LaTeX
+ is designed around a philosophy similar to that of \SpecialChar LyX
+.
+ Leslie Lamport once said (see reference [1])
+\end_layout
+
+\begin_layout Quote
+The function of typographic design is to help the reader understand the
+ author's ideas.
+ For a document to be easy to read, its visual structure must reflect its
+ logical structure.
+ Quotations and computer programs, being logically distinct structural elements,
+ should be distinguished visually from one another....
+ Since \SpecialChar LaTeX
+ can't understand your prose, you must explicitly indicate the logical
+ structure by typing special commands....
+ As you are writing your document, you should be concerned with its logical
+ structure, not its visual appearance.
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Hint: This is a QUOTE
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Why \SpecialChar LyX
+ is better
+\begin_inset CommandInset label
+LatexCommand label
+name "subsec:Why--is"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\SpecialChar LyX
+ can be useful to more people than \SpecialChar LaTeX
+.
+ It's considerably easier to learn, because you don't need to learn \SpecialChar LaTeX
+ (which
+ is practically a programming language).
+ \SpecialChar LyX
+ is basically like other 
+\begin_inset Quotes eld
+\end_inset
+
+What you see is what you get
+\begin_inset Quotes erd
+\end_inset
+
+ word processors, except that \SpecialChar LyX
+ is 
+\begin_inset Quotes eld
+\end_inset
+
+What you see is what you mean
+\begin_inset Quotes erd
+\end_inset
+
+.
+ In this way, it combines the ease of use of word processors with the power
+ of \SpecialChar LaTeX
+.
+ This is a Good Thing.
+ Also, the file format is platform independent.
+ Best of all, it's FREE!
+\end_layout
+
+\begin_layout Section
+Features of \SpecialChar LyX
+
+\end_layout
+
+\begin_layout Standard
+\SpecialChar LyX
+ has many features which make writing documents easier.
+ 
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+After all, why else would you want to use it?
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Hint: This parenthetical statement would look better in a footnote
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+ I'm VERY EXCITED
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Hint: Emphasize!
+\end_layout
+
+\end_inset
+
+ to talk about them.
+ Here's a list of just a few.
+\end_layout
+
+\begin_layout Itemize
+\SpecialChar LyX
+ worries about margins, and footnote numbering for you
+\end_layout
+
+\begin_layout Itemize
+\SpecialChar LyX
+ makes it simple to write and edit mathematical formulae
+\end_layout
+
+\begin_layout Standard
+For a more philosophical discussion of why \SpecialChar LyX
+ is better than lots of other
+ word processors, see Section 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "subsec:Why--is"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, which can be found on page 1.
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Hint: Probably, these CROSS-REFERENCES shouldn't be
+\end_layout
+
+\begin_layout Plain Layout
+"hard-coded".
+ What if we change the section numbers?
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Lame attempts to use other \SpecialChar LyX
+ stuff
+\end_layout
+
+\begin_layout Standard
+I wrote a program the other day.
+ It looked lik e this.
+\end_layout
+
+\begin_layout LyX-Code
+5 REMARK MY AWESOME PROGRAM
+\end_layout
+
+\begin_layout LyX-Code
+10 PRINT 
+\begin_inset Quotes eld
+\end_inset
+
+I'M AWESOME!
+\begin_inset Quotes erd
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+20 GOTO 10 
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
+Hint: This is computer CODE
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+After all that scientific thinking, I started feeling more artistic, so
+ I wrote this haiku
+\end_layout
+
+\begin_layout Standard
+\SpecialChar LyX
+ is really great
+\end_layout
+
+\begin_layout Standard
+Typesetting word processor
+\end_layout
+
+\begin_layout Standard
+It saves so much time 
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
+Hint: It's not very good, but it is poetry,
+\end_layout
+
+\begin_layout Plain Layout
+otherwise known as VERSE
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Math Stuff
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Hint: these math things should be printed in math mode!
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+My favorite equation is the solution to a quadratic equation.
+ If 
+\begin_inset Formula $ax^{2}+bx+c=0$
+\end_inset
+
+ (eq.1), then 
+\begin_inset Formula $x=\frac{{-b\pm\sqrt{{b^{2}-4ac}}}}{2a}$
+\end_inset
+
+ (eq.
+ 2).
+\end_layout
+
+\begin_layout Standard
+Another favorite equation is the basis of calculus: 
+\begin_inset Formula $\lim_{\Delta x\to0}\frac{{f'(x)\equiv f(x+\Delta x)-f(x)}}{\Delta x}$
+\end_inset
+
+ (eq.
+ 3).
+\begin_inset Formula $\left(\begin{array}{ccccc}
+1 & 1 & 1 & 2 & 3\\
+ &  &  &  & 2
+\end{array}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+————————————————
+\end_layout
+
+\begin_layout Standard
+REFERENCES
+\end_layout
+
+\begin_layout Standard
+[1] Lamport, Leslie.
+ \SpecialChar LaTeX
+: A Document Preparation System.
+ Addison-Wesley, Reading, Massachusetts, second edition, 1994.
+\end_layout
+
+\end_body
+\end_document

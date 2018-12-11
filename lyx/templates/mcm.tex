@@ -1,0 +1,282 @@
+\documentclass[a4paper,11pt]{article}
+\usepackage{booktabs}
+\usepackage{amsmath}
+\usepackage{longtable}
+\usepackage{array}
+\usepackage{latexsym}
+\usepackage{setspace}
+\newcommand{\PreserveBackslash}[1]{\let\temp=\\#1\let\\=\temp}
+\newcolumntype{C}[1]{>{\PreserveBackslash\centering}p{#1}}
+\newcolumntype{R}[1]{>{\PreserveBackslash\raggedleft}p{#1}}
+\newcolumntype{L}[1]{>{\PreserveBackslash\raggedright}p{#1}}
+
+% define the title
+\author{Team of HIT}
+\title{Our paper}
+\begin{document}
+% generates the title
+\maketitle
+% insert the table of contents
+\tableofcontents
+\section{Overview}
+%\ldots
+\subsection{Background}
+\subsection{Restatement of the problem}
+\subsection{Literature Review and Our Work}
+\section{Notation}
+\section{Sub-model I:Analyse traffic flow towards continuous velocity field while overtaking}
+\subsection{Assumption}
+\subsection{Establishment}
+
+\begin{equation} \label{eq:eq1}
+q\left(x,t\right)=\rho\left(x,t\right)u\left(x,t\right)
+\end{equation}
+
+\begin{equation} \label{eq:eq2}
+\frac{\partial\rho}{\partial t}+\frac{\partial q}{\partial x}=\beta(x,t)
+\end{equation}
+
+\begin{equation} \label{eq:eq3}
+u=u_{max}(1-\frac{\rho}{\rho_{max}})=f(\rho)
+\end{equation}
+
+\begin{equation} \label{eq:eq4}
+\frac{\partial\rho}{\partial t}+\frac{\partial \rho u(\rho)}{\partial t}=\frac{\partial\rho}{\partial t}+\frac{dq}{d\rho}\frac{\partial\rho}{\partial x}=\beta(x,t)
+\end{equation}
+
+\begin{equation} \label{eq:eq5}
+\frac{dq}{d\rho}=u_{max}(1-\frac{2\rho}{\rho_{max}})
+\end{equation}
+
+\begin{equation} \label{eq:eq6}
+\frac{\partial\rho}{\partial t}+u_{max}(1-2\frac{\rho}{\rho_{max}})\frac{\partial\rho}{\partial x}=\beta(x,t)
+\end{equation}
+
+\begin{equation}\label{eq:eq7}
+\beta(x,t)=
+\begin{cases}
+0\qquad(t\in[0,t_1][t_2,t_3][t_4,+\infty])\\
+-\frac{\alpha q_0}{L}\qquad(t\in[t_1,t_2])\\
+\frac{\alpha q_0}{L}\qquad(t\in[t_3,t_4])\\
+\end{cases}
+\end{equation}
+
+\begin{equation} \label{eq:eq8}
+\rho(x,t_1)=\rho_0[1+\gamma\sin(2\pi\alpha\rho_0x)]
+\end{equation}
+
+\begin{equation} \label{eq:eq9}
+\frac{\partial\rho}{\partial t}+u_{max}(1-2\frac{\rho}{\rho_{max}})\frac{\partial\rho}{\partial x}=\beta(x,t)
+\end{equation}
+
+\begin{equation}\label{eq:eq10}
+\beta(x,t)=
+\begin{cases}
+0\qquad(t\in[0,t_1][t_2,t_3][t_4,+\infty])\\
+-\frac{\alpha q_0}{L}\qquad(t\in[t_1,t_2])\\
+\frac{\alpha q_0}{L}\qquad(t\in[t_3,t_4])\\
+\end{cases}
+\end{equation}
+
+\begin{equation} \label{eq:eq11}
+\rho(x,t_1)=\rho_0[1+\gamma\sin(2\pi\alpha\rho_0x)]
+\end{equation}
+
+\begin{equation} \label{eq:eq12}
+q=\rho(x,t)u
+\end{equation}
+
+\begin{equation} \label{eq:eq13}
+85m<X_1<1000m
+\end{equation}
+
+\begin{equation} \label{eq:eq14}
+60km/h<V_1 \quad or \quad V_2<120km/h
+\end{equation}
+
+\begin{equation} \label{eq:eq15}
+0m<X_2<1000m
+\end{equation}
+
+\begin{equation}\label{eq:eq16}
+X_1=
+\begin{cases}
+ \quad600\sim1000\qquad big \\
+ \quad200\sim600\qquad middle\\
+ \quad85\sim200\qquad small\\
+\end{cases}
+\end{equation}
+
+\begin{equation}\label{eq:eq17}
+V_1 \quad or \quad V_2=
+\begin{cases}
+ \quad100\sim120\qquad big \\
+ \quad80\sim100\qquad middle\\
+ \quad60\sim80\qquad small\\
+\end{cases}
+\end{equation}
+
+\begin{equation}\label{eq:eq18}
+X_2=
+\begin{cases}
+ \quad600\sim1000\qquad big \\
+ \quad200\sim600\qquad middle\\
+ \quad0\sim200\qquad small\\
+\end{cases}
+\end{equation}
+
+\begin{equation} \label{eq:eq19}
+S=f(X_1,V_1,X_2,V_2)
+\end{equation}
+
+%Model3 equation
+\begin{equation} \label{eq:eq20}
+S_f=\overline{S}-k\delta(X)
+\end{equation}
+
+\begin{equation} \label{eq:eq21}
+\overline{S}=f(\overline{X_1},V,\overline{X_2},V)
+\end{equation}
+
+\begin{equation} \label{eq:eq22}
+S_f=\overline{S}-k_1\delta(X)-k_2\delta(V)
+\end{equation}
+
+\begin{equation} \label{eq:eq23}
+\overline{S}=f(\overline{X},V,\overline{X},V)
+\end{equation}
+
+%safety analysis of diffrent flow
+\begin{equation} \label{eq:eq24}
+\overline{X}_{t=t_1}=E(X)_{t=t_1}=\frac{\int_0^L(\frac{1}{\rho(x,t_1)}-l)dx}{L}
+\end{equation}
+
+\begin{equation} \label{eq:eq25}
+\overline{V}_{t=t_1}=E(V)_{t=t_1}=\frac{\int_0^L u(x,t_1)dx}{L}
+\end{equation}
+
+\begin{equation} \label{eq:eq26}
+\sigma(X)_{t=t_1}=\sqrt{\frac{\int_0^L [(\frac{1}{\rho(x,t_1)}-l)-E(X)_{t=t_1}]^2 dx}{L}}
+\end{equation}
+
+\begin{equation} \label{eq:eq27}
+\sigma(V)_{t=t_1}=\sqrt{\frac{\int_0^L [u(x,t_1)-E(V)_{t=t_1}]^2 dx}{L}}
+\end{equation}
+
+%Rainning day analysis
+\begin{equation} \label{eq:eq28}
+\rho_{max}^{rain}=\delta\rho_{max}
+\end{equation}
+
+\begin{equation} \label{eq:eq29}
+u=u_{max}(1-\frac{\rho}{\rho_{max}^{rain}})=u_{max}(1-\frac{\rho}{\delta\rho_{max}})
+\end{equation}
+
+\begin{equation} \label{eq:eq30}
+\delta(q)=\sqrt{D(q)}
+\end{equation}
+
+%multi-lane
+\begin{equation} \label{eq:eq31}
+\frac{\partial \rho_1}{\partial t}+u_{1max}(1-2\frac{\rho_1}{\rho_{max}})\frac{\partial \rho_1}{\partial x}=\beta_1(x,t)
+\end{equation}
+
+\begin{equation} \label{eq:eq32}
+\frac{\partial \rho_2}{\partial t}+u_{2max}(1-2\frac{\rho_2}{\rho_{max}})\frac{\partial \rho_2}{\partial x}=\beta_2(x,t)
+\end{equation}
+
+
+\begin{spacing}{1.3}
+\begin{equation}\label{eq:eq33}
+\beta_1(x,t)=
+\begin{cases}
+0\qquad(t\in[0,t_1][t_2,t_3][t_4,t_5][t_6,+\infty])\\
+-\frac{\alpha_1 q_0}{L}\qquad(t\in[t_1,t_2])\\
+\frac{\alpha_2 q_0}{L}\qquad(t\in[t_3,t_4])\\
+\frac{\alpha_1 q_0}{L}\qquad(t\in[t_5,t_6])\\
+\end{cases}
+\end{equation}
+\end{spacing}
+
+\begin{spacing}{1.5}
+\begin{equation}\label{eq:eq34}
+\beta_2(x,t)=
+\begin{cases}
+0\qquad(t\in[0,t_3][t_4,+\infty])\\
+-\frac{\alpha_2 q_0}{L}\qquad(t\in[t_3,t_4])\\
+\end{cases}
+\end{equation}
+\end{spacing}
+
+\begin{equation} \label{eq:eq35}
+\rho_1(x,t_1)=\rho_{10}[1+\gamma_1\sin(2\pi\alpha_1\rho_{10}x)]
+\end{equation}
+
+\begin{equation} \label{eq:eq36}
+\rho_1(x,t_3)=\rho_{20}[1+\gamma_2\sin(2\pi\alpha_2\rho_{20}x)]
+\end{equation}
+
+
+
+
+\section{Sub-model II:Evaluation of safety degree towards an individual vehicle while overtaking}
+\subsection{Assumption}
+\subsection{Establishment}
+\section{Sub-model III:Evaluation of overall safety degree towards continuous velocity field while overtaking}
+\section{Model analyse}
+\subsection{Under different traffic density}
+\subsubsection{Traffic flow analysis}
+\subsubsection{Safety degree analysis}
+\subsection{Under different maximum speed}
+\subsubsection{Traffic flow analysis}
+\subsubsection{Safety degree analysis}
+\subsection{Under different weather condition}
+\subsubsection{Traffic flow analysis}
+\subsubsection{Safety degree analysis}
+\newpage
+\subsection{Results}
+\subsubsection{Evaluations of current regulations}
+\subsubsection{Disadvantages of current regulations}
+\subsection{Other suggestions}
+\subsubsection{Alternative options}
+\subsubsection{Influence while driving left}
+\section{Sensitivity Analysis}
+\subsection{Multilane condition}
+\subsection{Overtaking while using opposite pathway}
+\subsection{Overtaking from left and right lane}
+\subsection{Overtaking more than one car}
+\subsection{Hidden danger besides overtaking}
+\subsection{Implement intelligent driving devices}
+\section{Model expansion}
+\section{Model evaluation}
+\subsection{Strength}
+\subsection{Weakness}
+\section{Conclusion}
+
+
+\begin{flushleft}
+\begin{table}[htbp]
+\renewcommand{\arraystretch}{1.5}
+  \caption{\label{tab:table15}Flow of each lane}
+  \begin{tabular}{C{3cm}C{3cm}C{2cm}C{1.4cm}C{3cm}}
+  \toprule
+  Lane number£¨from right to left£©&	Velocity range(km/h)&$\rho$(km/Veh)&$u$(km/h)&$q$(Veh/h)\\
+  \midrule
+  1	&40$\sim$60&	26.32&	50&	1316\\
+  2	&60$\sim$80&	20.83&	70&	1458\\
+  3	&80$\sim$100&	11.36&	90&	1022.4\\
+  4& $>$100&	0.57&	100&	57\\
+
+  \bottomrule
+
+\end{tabular}
+\end{table}
+\end{flushleft}
+
+
+
+
+
+
+
+\end{document}

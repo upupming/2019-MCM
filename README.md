@@ -8,8 +8,9 @@
 
 ## 报名链接
 
-1. [赛氪报名链接](https://www.saikr.com/vse/comap/2019)
-2. [官网报名链接](https://www.comap.com/undergraduate/contests/)
+1. [官网报名链接](http://today.hit.edu.cn/article/2018/12/04/62165)
+2. [赛氪报名链接](https://www.saikr.com/vse/comap/2019)
+3. [官网报名链接](https://www.comap.com/undergraduate/contests/)
 
 ## 竞赛简介
 
@@ -22,6 +23,10 @@
 3. 各种 package 的文档 https://ctan.org/pkg
 
 ### LyX
+
+### Git
+
+Git diff for doc(x)
 
 ### tikzit
 
