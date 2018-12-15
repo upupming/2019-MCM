@@ -1,0 +1,10 @@
+Optimization terminated successfully.
+         Current function value: -14.571429  
+         Iterations: 2
+     fun: -14.571428571428571
+ message: 'Optimization terminated successfully.'
+     nit: 2
+   slack: array([3.85714286, 0.        ])
+  status: 0
+ success: True
+       x: array([6.42857143, 0.57142857, 0.        ])

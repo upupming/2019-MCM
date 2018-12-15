@@ -16,6 +16,10 @@
 
 [题目类型、评审规则](https://www.linstitute.net/archives/84323)
 
+## 算法
+
+请见 [algorithms](./algorithms/README.md)
+
 ## LaTeX
 
 1. 教程 https://www.latex-tutorial.com/tutorials/
