@@ -18,15 +18,19 @@
 
 ## 历届题目和论文
 
-> TODO
-
-## 竞赛简介
-
-[题目类型、评审规则](https://www.linstitute.net/archives/84323)
+> TODO, read more, learn more
 
 ## 算法
 
 请见 [algorithms](./algorithms/README.md)
+
+## 画图
+
+1. [基本的点、线、图形、坐标轴](https://www.overleaf.com/learn/latex/LaTeX_Graphics_using_TikZ:_A_Tutorial_for_Beginners_(Part_1)%E2%80%94Basic_Drawing)
+2. [使用 GeoGebra 画图](https://www.overleaf.com/learn/latex/LaTeX_Graphics_using_TikZ:_A_Tutorial_for_Beginners_(Part_2)%E2%80%94Generating_TikZ_Code_from_GeoGebra)
+3. [TikZ 流程图模板](https://www.overleaf.com/learn/latex/LaTeX_Graphics_using_TikZ:_A_Tutorial_for_Beginners_(Part_3)%E2%80%94Creating_Flowcharts)
+4. [Circuitikz 电路图](https://www.overleaf.com/learn/latex/LaTeX_Graphics_using_TikZ:_A_Tutorial_for_Beginners_(Part_4)%E2%80%94Circuit_Diagrams_Using_Circuitikz)
+5. [Mind maps](https://www.overleaf.com/learn/latex/LaTeX_Graphics_using_TikZ:_A_Tutorial_for_Beginners_(Part_5)%E2%80%94Creating_Mind_Maps)
 
 ## LaTeX
 
@@ -35,6 +39,8 @@
 3. 各种 package 的文档 https://ctan.org/pkg
 
 ### LyX
+
+See https://github.com/ZPinjun/paper
 
 ### Git
 

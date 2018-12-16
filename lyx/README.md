@@ -1,5 +1,7 @@
 # LyX
 
+ATTENTION: this folder is deprecated, please see https://github.com/ZPinjun/paper
+
 ## Templates
 
 构建自己的模板，参考资料：

@@ -1,0 +1,48 @@
+% https://www.overleaf.com/learn/LaTeX_Graphics_using_TikZ:_A_Tutorial_for_Beginners_(Part_4)%E2%80%94Circuit_Diagrams_Using_Circuitikz
+
+\documentclass{article}
+
+% For electrical units
+\usepackage[siunitx]{circuitikz}
+
+\begin{document}
+
+\begin{circuitikz} [scale=2]
+
+% \draw (0, 0) to [battery] (0, 4) to[ammeter, l_=2<\milli\ampere>] (4, 4) to[C] (4, 0) -- (3.5, 0) to[lamp, *-*](0.5, 0) -- (0, 0);
+% \draw (0.5, 0) -- (0.5, -2) to[voltmeter] (3.5, -2) -- (3.5, 0);
+
+% display the label next to an arrow
+\draw (0, 0) to [battery] (0, 4) to[ammeter, i_=2<\milli\ampere>] (4, 4) to[C=3<\farad>] (4, 0) -- (3.5, 0) to[lamp, *-*](0.5, 0) -- (0, 0);
+\draw (0.5, 0) -- (0.5, -2) to[voltmeter, l=3<\kilo\volt>, color=red] (3.5, -2) -- (3.5, 0);
+
+\end{circuitikz}
+
+\begin{circuitikz}
+  \draw
+  (0,0) to[R, o-o] (2,0)
+  (4,0) to[vR, o-o] (6,0)
+  (0,2) to[transmission line, o-o] (2,2)
+  (4,2) to[closing switch, o-o] (6,2)
+  (0,4) to[european current source, o-o] (2,4)
+  (4,4) to[european voltage source, o-o] (6,4)
+  (0,6) to[empty diode, o-o] (2,6)
+  (4,6) to[full led, o-o] (6,6)
+  (0,8) to[generic, o-o] (2,8)
+  (4,8) to[sinusoidal voltage source, o-o] (6,8)
+  ;
+  \end{circuitikz}
+
+  \begin{circuitikz}
+    \draw
+    (0,0) node[antenna] {}
+    (4,0) node[pmos] {}
+    (0,4) node[op amp] {}
+    (4,4) node[american or port] {}
+    (0,8) node[transformer] {}
+    (4,8) node[spdt] {};
+  \end{circuitikz}
+
+% More at http://mirrors.ibiblio.org/CTAN/graphics/pgf/contrib/circuitikz/doc/circuitikzmanual.pdf
+
+\end{document}

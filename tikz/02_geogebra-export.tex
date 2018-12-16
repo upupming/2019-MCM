@@ -1,0 +1,44 @@
+\documentclass[10pt]{article}
+\usepackage{pgf,tikz,pgfplots}
+\pgfplotsset{compat=1.15}
+\usepackage{mathrsfs}
+\usetikzlibrary{arrows}
+\pagestyle{empty}
+\newcommand{\degre}{\ensuremath{^\circ}}
+\begin{document}
+\definecolor{rvwvcq}{rgb}{0.08235294117647059,0.396078431372549,0.7529411764705882}
+\begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1cm,y=1cm]
+\begin{axis}[
+x=1cm,y=1cm,
+axis lines=middle,
+ymajorgrids=true,
+xmajorgrids=true,
+xmin=-6.2,
+xmax=6.36,
+ymin=-7.29,
+ymax=7.29,
+xtick={-6,-5,...,6},
+ytick={-7,-6,...,7},]
+\clip(-6.2,-7.29) rectangle (6.36,7.29);
+\fill[line width=2pt,color=rvwvcq,fill=rvwvcq,fill opacity=0.10000000149011612] (3.16,-2.35) -- (2,1) -- (-0.949744447861935,-0.9664962985746233) -- (2.2168448429809082,4.538513574097546) -- cycle;
+\draw [shift={(2,1)},line width=2pt,fill=black,fill opacity=0.10000000149011612] (0,0) -- (-70.9006339192076:0.6) arc (-70.9006339192076:213.69006752597977:0.6) -- cycle;
+\draw [line width=2pt] (2,1) circle (3.5451516187604732cm);
+\draw [line width=2pt,color=rvwvcq] (3.16,-2.35)-- (2,1);
+\draw [line width=2pt,color=rvwvcq] (2,1)-- (-0.949744447861935,-0.9664962985746233);
+\draw [line width=2pt,color=rvwvcq] (-0.949744447861935,-0.9664962985746233)-- (2.2168448429809082,4.538513574097546);
+\draw [line width=2pt,color=rvwvcq] (2.2168448429809082,4.538513574097546)-- (3.16,-2.35);
+\draw [line width=2pt,domain=-6.2:6.36] plot(\x,{(-5.286027755971357-1.3835037014253768*\x)/4.109744447861935});
+\begin{scriptsize}
+\draw [fill=rvwvcq] (2,1) circle (2.5pt);
+\draw[color=rvwvcq] (2.16,1.42) node {$A$};
+\draw [fill=rvwvcq] (3.16,-2.35) circle (2.5pt);
+\draw[color=rvwvcq] (3.32,-1.92) node {$B$};
+\draw [fill=rvwvcq] (-0.949744447861935,-0.9664962985746233) circle (2.5pt);
+\draw[color=rvwvcq] (-0.78,-0.54) node {$C$};
+\draw [fill=rvwvcq] (2.2168448429809082,4.538513574097546) circle (2.5pt);
+\draw[color=rvwvcq] (2.38,4.96) node {$D$};
+\draw[color=black] (4.2,1.48) node {$\alpha = 284.5907014451877\textrm{\degre}$};
+\end{scriptsize}
+\end{axis}
+\end{tikzpicture}
+\end{document}
