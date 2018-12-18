@@ -13,8 +13,10 @@
     http://www.mathportals.com/mcm/index.html  
     http://www.immchallenge.org/mcm/index.html  
     获取竞赛题目
+- [ ] 看好出题人的要求，一般包括 summary, synopsis，有页数限制
 - [ ] 多查一些参考资料，所有文献放在指定目录，方便获取
 - [ ] 论文写完之后，检查格式是否符合规范，包括：
+  - [ ] 符合出题人要求
   - [ ] 章节号
   - [ ] 页码
   - [ ] 公式序号
