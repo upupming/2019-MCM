@@ -126,3 +126,5 @@ sympy-plots-for-*.tex/
 
 # xindy
 *.xdy
+
+node_modules
