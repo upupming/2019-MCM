@@ -14,6 +14,10 @@
 
 See [team.md](./team.md)
 
+## Glossary
+
+See [glossary.md](glossary.md)
+
 ## 历届题目和论文
 
 > TODO, read more, learn more
