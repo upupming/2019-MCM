@@ -16,7 +16,7 @@ See [team.md](./team.md)
 
 ## Glossary
 
-See [glossary.md](glossary.md)
+https://docs.qq.com/sheet/DTFJVWkJDbnRVYmtZ
 
 ## 历届题目和论文
 
