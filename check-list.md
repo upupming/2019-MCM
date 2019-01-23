@@ -16,12 +16,14 @@
 - [ ] 看好出题人的要求，一般包括 summary, synopsis，有页数限制
 - [ ] 多查一些参考资料，所有文献放在指定目录，方便获取
 - [ ] 论文写完之后，检查格式是否符合规范，包括：
-  - [ ] 符合出题人要求
+  - [ ] 符合出题人要求（审题的几个问题）
   - [ ] 章节号
   - [ ] 页码
-  - [ ] 公式序号
-  - [ ] 图表序号
   - [ ] 参考文献引用，公式、图表引用（Eq. 1、Figure 1、Table 1）
+  - [ ] 公式序号（标签）
+  - [ ] 图表序号（标签）
+  - [ ] 参考文献引用
+  - [ ] 参考文献格式，浏览一遍
 - [ ] 使用 Grammarly 检查语法是否正确
 - [ ] EST 2019.01.29 9:00 之前提交论文 pdf 到 solutions@comap.com
   - 主题：COMAP 54321
@@ -34,3 +36,4 @@
 
 suggestion：We have also made a check list in tower. Maybe we should delete either this file or list in tower, keeping our work plain.
 > Here we can add more details and track our change history. I prefer using this document.
+> 
