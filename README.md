@@ -1,6 +1,7 @@
 # 2019 美赛 (MCM contest) ![From](https://img.shields.io/badge/Form-2019.1.25%20--%205%3A50-brightgreen.svg) ![To](https://img.shields.io/badge/To-2019.1.29%20--%209%3A00-brightgreen.svg)
 
 ![Learnt](https://img.shields.io/badge/Learnt-Cooperation%2C%20modeling%2C%20coding%2C%20math.%20.%20.-green.svg)
+![Designated](https://img.shields.io/badge/Designated-Meritorious%20Winner-blue.svg)
 
 This repository is our work on preparing 2019 MCM contest. Some things are great, other things are redundant. Anyway, it will help you learn more about MCM contest! :wave:
 
@@ -46,7 +47,7 @@ https://docs.qq.com/sheet/DTFJVWkJDbnRVYmtZ
 
 ### LyX
 
-See https://github.com/ZPinjun/paper
+See https://github.com/ZPinjun/paper (learning version) & https://github.com/upupming/mcm-lyx (final version)
 
 ### Git
 
